@@ -1,0 +1,34 @@
+uuid: 91ef7230-6a0c-4a58-8a5f-8e70449a2b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_specific_sub_segment
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.specific_sub_segment
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_specific_sub_segment
+field_name: field_specific_sub_segment
+entity_type: node
+bundle: supplier_details
+label: 'What are the specific sub-segments does your company service'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      specific_sub_segment: specific_sub_segment
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 3
+        enabled: false
+      specific_sub_segment:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

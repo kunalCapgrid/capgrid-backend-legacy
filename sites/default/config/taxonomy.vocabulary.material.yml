@@ -1,0 +1,8 @@
+uuid: 5fdf86bf-3eec-479a-a5d4-282f4656b672
+langcode: en
+status: true
+dependencies: {  }
+name: Material
+vid: material
+description: ''
+weight: 0

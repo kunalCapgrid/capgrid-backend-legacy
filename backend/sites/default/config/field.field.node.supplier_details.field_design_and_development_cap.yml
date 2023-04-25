@@ -1,0 +1,88 @@
+uuid: 887328b0-717c-48f5-83ea-88a48f28ddf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_design_and_development_cap
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.design_and_development_capabilit
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_design_and_development_cap
+field_name: field_design_and_development_cap
+entity_type: node
+bundle: supplier_details
+label: 'Design and Development Capability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      design_and_development_capabilit: design_and_development_capabilit
+    target_bundles_drag_drop:
+      assembly_capability:
+        weight: 21
+        enabled: false
+      bending_capability:
+        weight: 22
+        enabled: false
+      business_segment:
+        weight: 23
+        enabled: false
+      casting_capabilities:
+        weight: 24
+        enabled: false
+      cutting_capability:
+        weight: 25
+        enabled: false
+      design_and_development_capabilit:
+        enabled: true
+        weight: 26
+      forging_capabilities:
+        weight: 27
+        enabled: false
+      heat_treatment_capability:
+        weight: 28
+        enabled: false
+      machining_capability:
+        weight: 29
+        enabled: false
+      major_production_capabilities:
+        weight: 30
+        enabled: false
+      material_grade:
+        weight: 31
+        enabled: false
+      material_weight:
+        weight: 32
+        enabled: false
+      moulding_capability:
+        weight: 33
+        enabled: false
+      painting_capability:
+        weight: 34
+        enabled: false
+      part_category:
+        weight: 35
+        enabled: false
+      quality_certification:
+        weight: 36
+        enabled: false
+      specific_sub_segment:
+        weight: 37
+        enabled: false
+      testing_facility:
+        weight: 38
+        enabled: false
+      thickness_plate:
+        weight: 39
+        enabled: false
+      welding_capability:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

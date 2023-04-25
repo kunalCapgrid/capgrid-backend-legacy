@@ -1,0 +1,5 @@
+name: 'Capgrid Tweaks'
+type: module
+description: 'Custom operations done here'
+core: 8.x
+package: 'Custom'

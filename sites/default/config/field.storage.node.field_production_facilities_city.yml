@@ -1,0 +1,21 @@
+uuid: cf464f48-69bc-43a4-a501-2b15e7c68dac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_production_facilities_city
+field_name: field_production_facilities_city
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

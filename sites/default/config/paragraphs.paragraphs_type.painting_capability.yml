@@ -1,0 +1,9 @@
+uuid: c42045eb-6ecc-47e8-8dd5-983644cdf77f
+langcode: en
+status: true
+dependencies: {  }
+id: painting_capability
+label: 'Painting Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

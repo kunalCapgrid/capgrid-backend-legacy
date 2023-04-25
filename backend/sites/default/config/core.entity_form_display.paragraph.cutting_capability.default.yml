@@ -1,0 +1,34 @@
+uuid: 750f1600-b96e-4ddf-b7e4-8450f07ccaad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cutting_capability.field_cut_type
+    - field.field.paragraph.cutting_capability.field_production_capacity
+    - paragraphs.paragraphs_type.cutting_capability
+id: paragraph.cutting_capability.default
+targetEntityType: paragraph
+bundle: cutting_capability
+mode: default
+content:
+  field_cut_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_production_capacity:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

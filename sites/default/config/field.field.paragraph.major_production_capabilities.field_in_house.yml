@@ -1,0 +1,19 @@
+uuid: acd4857e-3bb8-40d5-9315-708c86f2f2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_in_house
+    - paragraphs.paragraphs_type.major_production_capabilities
+id: paragraph.major_production_capabilities.field_in_house
+field_name: field_in_house
+entity_type: paragraph
+bundle: major_production_capabilities
+label: In-House
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

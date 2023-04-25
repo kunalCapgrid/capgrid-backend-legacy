@@ -1,0 +1,21 @@
+uuid: fa1b2e74-6720-4720-a143-deaeae7631cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tier_2_and_tier_3_supplier
+    - node.type.supplier_details
+  module:
+    - options
+id: node.supplier_details.field_tier_2_and_tier_3_supplier
+field_name: field_tier_2_and_tier_3_supplier
+entity_type: node
+bundle: supplier_details
+label: 'Are you Tier 2 and Tier 3 suppliers located in India'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

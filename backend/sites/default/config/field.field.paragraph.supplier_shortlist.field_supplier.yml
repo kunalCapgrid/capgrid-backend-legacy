@@ -1,0 +1,28 @@
+uuid: 30233a8b-9234-431d-ba81-856a7cef6104
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_supplier
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_supplier
+field_name: field_supplier
+entity_type: paragraph
+bundle: supplier_shortlist
+label: Supplier
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_details: supplier_details
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

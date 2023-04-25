@@ -1,0 +1,40 @@
+uuid: f115db23-05ef-4a01-a353-ea382c07a239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_major_production
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.major_production_capabilities
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_major_production
+field_name: field_major_production
+entity_type: node
+bundle: supplier_details
+label: 'What are your major production capabilities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      major_production_capabilities: major_production_capabilities
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 5
+        enabled: false
+      major_production_capabilities:
+        enabled: true
+        weight: 6
+      part_category:
+        weight: 7
+        enabled: false
+      specific_sub_segment:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

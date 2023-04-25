@@ -1,0 +1,19 @@
+uuid: 2592406e-9cfa-4ab4-b693-1bb4387e3e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_area
+    - node.type.post_demand
+id: node.post_demand.field_application_area
+field_name: field_application_area
+entity_type: node
+bundle: post_demand
+label: 'Application Area'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

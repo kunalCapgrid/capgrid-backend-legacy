@@ -1,0 +1,22 @@
+uuid: ea7b22a0-336b-47df-82d4-3426bcad9b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.promote
+field_name: promote
+entity_type: node
+bundle: purchaser_requirements
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

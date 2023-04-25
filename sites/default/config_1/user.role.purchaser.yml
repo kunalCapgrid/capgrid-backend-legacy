@@ -1,0 +1,11 @@
+uuid: d2999cab-ec1a-49f3-bb19-8fca58f4004c
+langcode: en
+status: true
+dependencies: {  }
+id: purchaser
+label: 'Purchaser (OEM)'
+weight: 4
+is_admin: null
+permissions:
+  - 'create purchaser_requirements content'
+  - 'edit any purchaser_requirements content'

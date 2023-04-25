@@ -1,0 +1,332 @@
+capgrid_tweaks.pdf_generation:
+  path: '/api/requestNDA'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::requestNDA'
+    _title: 'Request NDA'
+  methods:  [POST]  
+  requirements:
+    _permission: 'access content'
+
+capgrid_tweaks.import_supplier:
+  path: '/import-supplier-details'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::importSupplier'
+    _title: 'Import Supplier Details'
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['jwt','cookie']
+
+capgrid_tweaks.supplier_set:
+  path: '/api/set-supplier'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setSuppliers'
+    _title: 'Set Supplier Data'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.upload_rrfq_docs:
+  path: '/api/upload-req-files/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::uploadRequirementDocs'
+    _title: 'Upload Requirement Docs'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.add_rfq_cart:
+  path: '/api/add_rfq_cart'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setSupplierCart'
+    _title: 'Upload Requirement Docs'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_rfq_cart:
+  path: '/api/get_cart_item'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getSupplierCart'
+    _title: 'Cart Item'
+  methods:  [GET]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.delete_rfq_cart:
+  path: '/api/remove_cart_item'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::deleteSupplierCart'
+    _title: 'Cart Item Deletion'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.got_to_rfq:
+  path: '/api/save_supplier_cart'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::saveCartItem'
+    _title: 'Save Cart Item'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.add_suppier:
+  path: '/api/add_new_supplier'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::addNewSupplier'
+    _title: 'Add New Supplier'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.add_rfq_details:
+  path: '/api/add_rfq_details'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::addRFQDetails'
+    _title: 'Add RFQ Details'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_supplier_rfq_details:
+  path: '/api/get_supplier_rfq_data/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getSupplierRFQDetails'
+    _title: 'Add RFQ Details'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.set_supplier_rfq_details:
+  path: '/api/set_supplier_rfq_data'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setSupplierRFQDetails'
+    _title: 'Add RFQ Details'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_messages:
+  path: '/api/get_message/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getMessageContent'
+    _title: 'Add RFQ Details'
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.set_messages:
+  path: '/api/set_message/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setMessageContent'
+    _title: 'Add RFQ Details'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.shortlist_rfq:
+  path: '/api/shortlist_rfq'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::shortlistRFQ'
+    _title: 'Add RFQ Details'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.bulk_supplier_upload:
+  path: '/suppliers/upload'
+  defaults:
+    _form: '\Drupal\capgrid_tweaks\Form\UploadSupplier'
+    _title: 'Upload Supplier Details'
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.matching_supplier:
+  path: '/api/get-matching-suppliers'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getMatchingSuppliers'
+    _title: 'Matching Suppliers'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_rfq_docs:
+  path: '/api/get-rfq_docs'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getRFQDocs'
+    _title: 'Get Documents'
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_all_responses:
+  path: '/api/get-all-response/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getSupplierQuestions'
+    _title: 'Get Supplier RFQ Questions'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.set_user_logout:
+  path: '/api/user-logout'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setUserLogout'
+    _title: ''
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.set_supplier_signed_nda:
+  path: '/api/set-signed-nda/{supplier_id}/{rfq_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setSignedNDA'
+    _title: 'Set Signed NDA'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.reset_user_password:
+  path: '/api/reset-password/{email}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::resetUserPass'
+    _title: 'Password Reset'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.capgrid_config_form:
+  path: '/admin/config/services/capgrid-config'
+  defaults:
+    _form: '\Drupal\capgrid_tweaks\Form\CapgridTweaksAdminConfig'
+    _title: 'Capgrid Config Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+capgrid_tweaks.contact_us:
+  path: '/api/contact-us'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::contactUs'
+    _title: 'Contact Us'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_should_cost:
+  path: '/api/get-should-cost/{content_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getShouldCost'
+    _title: 'Contact Us'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.set_sould_cost:
+  path: '/api/set-should-cost'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setShouldCost'
+    _title: 'Contact Us'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.update_sould_cost:
+  path: '/api/set-should-cost/{content_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::updateShouldCost'
+    _title: 'Contact Us'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_supplier_list_should_cost:
+  path: '/api/get-supplier-list/{requisition_id}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::getSupplierFromRequisition'
+    _title: 'Get Supplier List'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.generate_otp:
+  path: '/api/generate_otp'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::generateOTP'
+    _title: 'Generate OTP'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.create_user_from_site:
+  path: '/api/verify_otp'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::createUserFromWebsite'
+    _title: 'Generate OTP'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.update_post_demand:
+  path: '/api/update_post_demand'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::updatePostedDemand'
+    _title: 'Update Demand'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.finalize_rfq_process:
+  path: '/api/finalize_rfq'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::finalizeRFQ'
+    _title: 'Finalize RFQ'
+  methods: [POST]
+  requirements:
+    _access: 'TRUE'
+
+capgrid_tweaks.get_full_list:
+  path: '/api/get_suppliers'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\SearchElastic::getAllSuppliers'
+    _title: 'Get All Suppliers'
+  methods: [GET]
+  requirements:
+    _permission: 'purchaser api access'
+
+capgrid_tweaks.get_suggesitions:
+  path: '/api/get_suggesitions/{suggesition_type}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\SearchElastic::getSuggesitions'
+    _title: 'Get Suggesition List'
+  methods: [GET]
+  requirements:
+   _permission: 'purchaser api access'
+
+capgrid_tweaks.get_filter_options:
+  path: '/api/get_options/{option_type}'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\SearchElastic::getFilterOptions'
+    _title: 'Get Option List'
+  methods: [GET]
+  requirements:
+   _permission: 'purchaser api access'
+
+capgrid_tweaks.set_recommended_days:
+  path: '/api/set-recommended-days'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setOrgRecommendedDays'
+    _title: 'Get Recommended Days'
+  methods: [POST]
+  requirements:
+   _permission: 'purchaser api access'
+
+# capgrid_tweaks.update_supplier_score:
+#   path: '/api/update_supplier_score'
+#   defaults:
+#     _controller: '\Drupal\capgrid_tweaks\Controller\SearchElastic::updateSupplierScore'
+#     _title: 'Get Option List'
+#   requirements:
+#     _access: 'TRUE'

@@ -1,0 +1,45 @@
+uuid: fac60023-85b4-4561-8703-8eb5137982fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.major_production_capabilities.field_in_house
+    - field.field.paragraph.major_production_capabilities.field_outsourced
+    - field.field.paragraph.major_production_capabilities.field_production_capabilities
+    - paragraphs.paragraphs_type.major_production_capabilities
+  module:
+    - entity_reference_revisions
+id: paragraph.major_production_capabilities.default
+targetEntityType: paragraph
+bundle: major_production_capabilities
+mode: default
+content:
+  field_in_house:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_outsourced:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_production_capabilities:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

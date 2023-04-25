@@ -1,0 +1,32 @@
+uuid: c69d40a8-57b5-477c-80f3-930f3d8ef6d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supplier_longlist.field_priority
+    - field.field.paragraph.supplier_longlist.field_supplier
+    - paragraphs.paragraphs_type.supplier_longlist
+id: paragraph.supplier_longlist.default
+targetEntityType: paragraph
+bundle: supplier_longlist
+mode: default
+content:
+  field_priority:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_supplier:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

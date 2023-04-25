@@ -1,0 +1,13 @@
+name: JSON Web Token Authentication (JWT)
+description: Provides functionality for issuing, validating, and authenticating with JSON Web Tokens.
+package: Web services
+type: module
+core_version_requirement: ^8.7.12 || ^9.0
+configure: jwt.jwt_config_form
+dependencies:
+  - key:key
+
+# Information added by Drupal.org packaging script on 2020-04-27
+version: '8.x-1.0-beta2'
+project: 'jwt'
+datestamp: 1587947705

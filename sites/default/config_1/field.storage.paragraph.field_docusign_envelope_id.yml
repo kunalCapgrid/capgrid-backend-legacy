@@ -1,0 +1,21 @@
+uuid: 4deb56f6-19b4-404e-b90d-0a4b36454bbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_docusign_envelope_id
+field_name: field_docusign_envelope_id
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

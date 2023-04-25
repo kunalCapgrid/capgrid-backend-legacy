@@ -1,0 +1,39 @@
+uuid: 7291d76a-010b-4040-a1f8-7efb3dadc305
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.post_demand.field_application_area
+    - field.field.node.post_demand.field_city
+    - field.field.node.post_demand.field_demand_type
+    - field.field.node.post_demand.field_looking_for
+    - field.field.node.post_demand.field_manufacturing_process
+    - field.field.node.post_demand.field_part_category
+    - field.field.node.post_demand.field_part_description
+    - field.field.node.post_demand.field_quantity_required
+    - field.field.node.post_demand.field_uploaded_files
+    - node.type.post_demand
+  module:
+    - user
+id: node.post_demand.teaser
+targetEntityType: node
+bundle: post_demand
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_application_area: true
+  field_city: true
+  field_demand_type: true
+  field_looking_for: true
+  field_manufacturing_process: true
+  field_part_category: true
+  field_part_description: true
+  field_quantity_required: true
+  field_uploaded_files: true
+  search_api_excerpt: true

@@ -1,0 +1,27 @@
+capgrid_tweaks.pdf_generation:
+  path: '/api/requestNDA'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::requestNDA'
+    _title: 'Request NDA'
+  methods:  [POST]  
+  requirements:
+    _permission: 'access content'
+
+capgrid_tweaks.import_supplier:
+  path: '/import-supplier-details'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::importSupplier'
+    _title: 'Import Supplier Details' 
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['jwt','cookie']
+
+capgrid_tweaks.supplier_set:
+  path: '/api/set-supplier'
+  defaults:
+    _controller: '\Drupal\capgrid_tweaks\Controller\CapgridTweaks::setSuppliers'
+    _title: 'Set Supplier Data'
+  methods:  [POST]  
+  requirements:
+    _access: 'TRUE'

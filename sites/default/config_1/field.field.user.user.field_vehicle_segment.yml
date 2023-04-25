@@ -1,0 +1,20 @@
+uuid: a165de5a-49b2-4fdc-88a1-48a9c98943dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_vehicle_segment
+  module:
+    - user
+id: user.user.field_vehicle_segment
+field_name: field_vehicle_segment
+entity_type: user
+bundle: user
+label: 'Vehicle Segment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

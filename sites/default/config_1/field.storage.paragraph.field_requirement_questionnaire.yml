@@ -1,0 +1,20 @@
+uuid: f71e645b-bb1f-4b8e-b13b-753e8b8d4048
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_requirement_questionnaire
+field_name: field_requirement_questionnaire
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

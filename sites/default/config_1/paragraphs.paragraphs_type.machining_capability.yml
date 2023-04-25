@@ -1,0 +1,9 @@
+uuid: 72152e44-031b-4476-bcbd-9d6e572c5616
+langcode: en
+status: true
+dependencies: {  }
+id: machining_capability
+label: 'Machining Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

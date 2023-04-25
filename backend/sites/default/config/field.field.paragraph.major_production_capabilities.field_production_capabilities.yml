@@ -1,0 +1,31 @@
+uuid: 53ef1c61-791f-4de5-9c46-47e94a4b7d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capabilities
+    - paragraphs.paragraphs_type.major_production_capabilities
+    - taxonomy.vocabulary.production_capabilities
+  module:
+    - entity_reference_revisions
+id: paragraph.major_production_capabilities.field_production_capabilities
+field_name: field_production_capabilities
+entity_type: paragraph
+bundle: major_production_capabilities
+label: 'Production Capabilities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      production_capabilities: production_capabilities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

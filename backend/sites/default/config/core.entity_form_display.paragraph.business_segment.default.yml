@@ -1,0 +1,36 @@
+uuid: 8a13e5a1-840f-4459-84f1-a351c906cc09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.business_segment.field_key_clients_segment
+    - field.field.paragraph.business_segment.field_vehicles
+    - paragraphs.paragraphs_type.business_segment
+  module:
+    - entity_reference_revisions
+id: paragraph.business_segment.default
+targetEntityType: paragraph
+bundle: business_segment
+mode: default
+content:
+  field_key_clients_segment:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_vehicles:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

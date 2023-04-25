@@ -1,0 +1,57 @@
+uuid: b30f325d-a710-4e23-9100-34b708d61ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.support_request.body
+    - field.field.node.support_request.field_reference_image
+    - field.field.node.support_request.field_support_id
+    - field.field.node.support_request.field_support_status
+    - node.type.support_request
+  module:
+    - options
+    - text
+    - user
+id: node.support_request.default
+targetEntityType: node
+bundle: support_request
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_reference_image:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_support_id:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_support_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

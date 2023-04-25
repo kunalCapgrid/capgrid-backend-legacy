@@ -1,0 +1,43 @@
+uuid: 977467bf-50d3-4a41-83a0-e1d6ac6c79a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.material_weight.field_material
+    - field.field.paragraph.material_weight.field_weight_max
+    - field.field.paragraph.material_weight.field_weight_min
+    - paragraphs.paragraphs_type.material_weight
+  module:
+    - entity_reference_revisions
+id: paragraph.material_weight.default
+targetEntityType: paragraph
+bundle: material_weight
+mode: default
+content:
+  field_material:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_weight_max:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_weight_min:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

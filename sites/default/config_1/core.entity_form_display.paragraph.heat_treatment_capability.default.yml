@@ -1,0 +1,43 @@
+uuid: 1001a701-a590-4075-b85a-1c36217db5eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heat_treatment_capability.field_heat_treatment_type
+    - field.field.paragraph.heat_treatment_capability.field_maximum_weight
+    - field.field.paragraph.heat_treatment_capability.field_production_capacity
+    - paragraphs.paragraphs_type.heat_treatment_capability
+id: paragraph.heat_treatment_capability.default
+targetEntityType: paragraph
+bundle: heat_treatment_capability
+mode: default
+content:
+  field_heat_treatment_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_maximum_weight:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_production_capacity:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,64 @@
+uuid: 345e38ce-1a7f-4bfd-a3ed-1ab67a0336c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bending_capability
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.bending_capability
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_bending_capability
+field_name: field_bending_capability
+entity_type: node
+bundle: supplier_details
+label: 'Bending Capability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      bending_capability: bending_capability
+    target_bundles_drag_drop:
+      bending_capability:
+        enabled: true
+        weight: 13
+      business_segment:
+        weight: 14
+        enabled: false
+      casting_capabilities:
+        weight: 15
+        enabled: false
+      cutting_capability:
+        weight: 16
+        enabled: false
+      forging_capabilities:
+        weight: 17
+        enabled: false
+      machining_capability:
+        weight: 18
+        enabled: false
+      major_production_capabilities:
+        weight: 19
+        enabled: false
+      material_grade:
+        weight: 20
+        enabled: false
+      material_weight:
+        weight: 21
+        enabled: false
+      part_category:
+        weight: 22
+        enabled: false
+      specific_sub_segment:
+        weight: 23
+        enabled: false
+      thickness_plate:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: 85e6597b-f3d6-4238-8976-282022d0bcb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cutting_capability.field_cut_type
+    - field.field.paragraph.cutting_capability.field_production_capacity
+    - paragraphs.paragraphs_type.cutting_capability
+id: paragraph.cutting_capability.default
+targetEntityType: paragraph
+bundle: cutting_capability
+mode: default
+content:
+  field_cut_type:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_production_capacity:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

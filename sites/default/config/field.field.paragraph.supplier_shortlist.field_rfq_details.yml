@@ -1,0 +1,19 @@
+uuid: abffdc38-ab57-457d-afa9-a0fe08bee3b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_rfq_details
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_rfq_details
+field_name: field_rfq_details
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'RFQ Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,34 @@
+uuid: 64b857bc-f02f-476e-aee7-deb0e0820c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.assembly_capability.field_assembly_type
+    - field.field.paragraph.assembly_capability.field_production_capacity
+    - paragraphs.paragraphs_type.assembly_capability
+id: paragraph.assembly_capability.default
+targetEntityType: paragraph
+bundle: assembly_capability
+mode: default
+content:
+  field_assembly_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_production_capacity:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

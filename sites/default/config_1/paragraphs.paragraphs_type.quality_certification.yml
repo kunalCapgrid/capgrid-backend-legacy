@@ -1,0 +1,9 @@
+uuid: 3ad6ff16-8474-4ad5-b4d9-97a03db31a87
+langcode: en
+status: true
+dependencies: {  }
+id: quality_certification
+label: 'Quality Certification'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

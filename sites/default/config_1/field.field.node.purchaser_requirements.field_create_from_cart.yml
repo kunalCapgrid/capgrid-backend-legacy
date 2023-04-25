@@ -1,0 +1,23 @@
+uuid: 58dc1ee5-d483-4f6f-8494-9057995de9ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_create_from_cart
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_create_from_cart
+field_name: field_create_from_cart
+entity_type: node
+bundle: purchaser_requirements
+label: 'Create from Cart'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

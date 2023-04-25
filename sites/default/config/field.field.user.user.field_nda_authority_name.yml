@@ -1,0 +1,20 @@
+uuid: d68d18c1-e5fa-407e-8912-bd2745ca2706
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nda_authority_name
+  module:
+    - user
+id: user.user.field_nda_authority_name
+field_name: field_nda_authority_name
+entity_type: user
+bundle: user
+label: 'NDA Authority Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

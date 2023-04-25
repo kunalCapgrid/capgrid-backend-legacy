@@ -1,0 +1,94 @@
+<?php 
+
+	use Drupal\Core\Form\FormStateInterface;
+
+	function capgrid_tweaks_user_presave(Drupal\Core\Entity\EntityInterface $entity) {
+		if($entity->isNew()) {
+			if($entity->get("field_profile_type")->value === "supplier"){
+				$entity->addRole('supplier');
+			}
+			else{
+				$entity->addRole('purchaser');
+			}
+		}
+	}
+
+	function capgrid_tweaks_mail($key, &$message, $params) {
+		$options = array(
+			'langcode' => $message['langcode'],
+		);
+	 
+		switch ($key) {
+			case 'send_nda_document':
+			case 'send_rfq_document':
+			case 'send_reset_password':
+			case 'new_contact_us':
+			case 'new_post_from_website':
+			case 'new_user_from_website':
+			case 'finalize_rfq_process':
+				$message['from'] = \Drupal::config('system.site')->get('mail');
+				$message['subject'] = $params['subject'];
+				$message['body'][] = $params['message'];
+				$message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+				break;
+			default:
+				break;
+		}
+	}
+
+	function capgrid_tweaks_cron() {
+		$file_ref = "public://nda-pdf/";
+		//$pdf_data = file_get_contents('sites/default/files/tmp/'.$file_name);
+		$basePath = 'https://demo.docusign.net/restapi';
+		$drupal_config = \Drupal::config('capgrid_tweaks.adminsettings');
+		$accessToken = $drupal_config->get('docusign_access_token');
+		$accountId = $drupal_config->get('docusign_account_id');
+
+		//$accountId = '10217966';
+		//$accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY4MTg1ZmYxLTRlNTEtNGNlOS1hZjFjLTY4OTgxMjIwMzMxNyJ9.eyJUb2tlblR5cGUiOjUsIklzc3VlSW5zdGFudCI6MTU4OTgzNDIyOCwiZXhwIjoxNTg5ODYzMDI4LCJVc2VySWQiOiIxMDI3YmVkYy1mNmJjLTQzODQtYmU1OS04MTI3YzIxM2UwZmYiLCJzaXRlaWQiOjEsInNjcCI6WyJzaWduYXR1cmUiLCJjbGljay5tYW5hZ2UiLCJvcmdhbml6YXRpb25fcmVhZCIsInJvb21fZm9ybXMiLCJncm91cF9yZWFkIiwicGVybWlzc2lvbl9yZWFkIiwidXNlcl9yZWFkIiwidXNlcl93cml0ZSIsImFjY291bnRfcmVhZCIsImRvbWFpbl9yZWFkIiwiaWRlbnRpdHlfcHJvdmlkZXJfcmVhZCIsImR0ci5yb29tcy5yZWFkIiwiZHRyLnJvb21zLndyaXRlIiwiZHRyLmRvY3VtZW50cy5yZWFkIiwiZHRyLmRvY3VtZW50cy53cml0ZSIsImR0ci5wcm9maWxlLnJlYWQiLCJkdHIucHJvZmlsZS53cml0ZSIsImR0ci5jb21wYW55LnJlYWQiLCJkdHIuY29tcGFueS53cml0ZSJdLCJhdWQiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJhenAiOiJmMGYyN2YwZS04NTdkLTRhNzEtYTRkYS0zMmNlY2FlM2E5NzgiLCJpc3MiOiJodHRwczovL2FjY291bnQtZC5kb2N1c2lnbi5jb20vIiwic3ViIjoiMTAyN2JlZGMtZjZiYy00Mzg0LWJlNTktODEyN2MyMTNlMGZmIiwiYW1yIjpbImludGVyYWN0aXZlIl0sImF1dGhfdGltZSI6MTU4OTgzNDIyNSwicHdpZCI6IjY1OTgyYjFhLWE2OGMtNGEwYS1hYmRhLTNkNjE0Mjk0NTk1ZiJ9.G66s4ClNa1P0EazJevFePVFGBAhV7Fr6L1iJ3L028gOyX30hT0H6YvAx7dJEDrX9ZDtSoNEMNtz0f0ySn1W6BRMkYxrNj07GCnyMjyNeQQtQDmAi-ipJBJYyT40ashI3iYABognd6-Jveoq5HUCXKgX4f6DXC2sZNq3GVNrrg_xvTeyXgilFrM_QPWb9IaIsSUqhS0q3UFeI7tneIIt8Uq6MFs-caE2sfDuYNMbhILUZrSlDLM3byblczcdjIrnRFF1iBhGTCY5itsA1Am0QhFpXVCl5cDX09WSvVsEnD1dCMokHI8Uk-rWaxP3zB4pBuERdXtuGwJznigF8dVbH_Q';
+		
+		$config = new \DocuSign\eSign\Configuration();
+		$config->setHost($basePath);
+		$config->addDefaultHeader("Authorization", "Bearer " . $accessToken);
+		$apiClient = new \DocuSign\eSign\Client\ApiClient($config);
+		$envelopeApi = new \DocuSign\eSign\Api\EnvelopesApi($apiClient);
+		
+		$shortlist_suppliers = \Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['type' => "supplier_shortlist", "field_request_nda"=>1]);
+
+		foreach($shortlist_suppliers as $suppliers_para){
+			if($suppliers_para->get('field_docusign_envelope_id')->value){
+				//if($suppliers_para->get('field_signed_nda_document')->target_id !== null){
+					$envelope_id = $suppliers_para->get('field_docusign_envelope_id')->value;
+					$temp_file = $envelopeApi->getDocument($accountId, "1", $envelope_id);
+					$pdf_data = file_get_contents($temp_file->getPathname());
+					$nda_pdf = file_save_data($pdf_data, $file_ref . 'signed_nda_doc'. time() . '.pdf', \Drupal\Core\File\FileSystemInterface::EXISTS_REPLACE);
+					$pdf_file_id = $nda_pdf->id();
+					$media_image = \Drupal\media\Entity\Media::create([
+										'bundle' => 'document',
+										'name' => 'signed_nda_doc'. time(),
+										'field_media_document' => [
+											'target_id' => $pdf_file_id,
+										]]);
+									$media_image->save();
+					$para_uuid = $suppliers_para->get('uuid')->value;
+					$supplier_parent_details = end(\Drupal::entityTypeManager()->getStorage('paragraph')->loadByProperties(['uuid' => $para_uuid ]));
+					$supplier_parent_details->set('field_signed_nda_document', $media_image->id());
+					$supplier_parent_details->save();
+				//}
+			}
+		}
+	}
+
+	function capgrid_tweaks_form_alter(&$form, FormStateInterface $form_state, $form_id){
+		if($form['#id'] === "views-exposed-form-all-requisition-page-1" || 
+		   $form['#id'] === "views-exposed-form-all-requisition-page-3"){
+			$form['created']['#type'] = 'date';
+			$form['created']['#size'] = 15;
+			$form['created_1']['#type'] = 'date';
+			$form['created_1']['#size'] = 15;
+		}
+	}
+
+
+	
+

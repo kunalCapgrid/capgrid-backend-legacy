@@ -1,0 +1,9 @@
+uuid: a2f9cb43-9b4d-4381-a03c-507e32dc7cf4
+langcode: en
+status: true
+dependencies: {  }
+id: executive_access
+label: 'Executive Access'
+weight: 6
+is_admin: null
+permissions: {  }

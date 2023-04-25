@@ -1,0 +1,52 @@
+uuid: 744b807a-d66b-4778-9fb1-366522edf461
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.welding_capability.field_length_depth
+    - field.field.paragraph.welding_capability.field_production_capacity
+    - field.field.paragraph.welding_capability.field_tolerance_grade
+    - field.field.paragraph.welding_capability.field_welding_type
+    - paragraphs.paragraphs_type.welding_capability
+id: paragraph.welding_capability.default
+targetEntityType: paragraph
+bundle: welding_capability
+mode: default
+content:
+  field_length_depth:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_production_capacity:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tolerance_grade:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_welding_type:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

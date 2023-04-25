@@ -1,0 +1,19 @@
+uuid: b1f51941-f016-4bc5-b5fe-3bd39ca45f1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_certification_details
+    - paragraphs.paragraphs_type.quality_certification
+id: paragraph.quality_certification.field_certification_details
+field_name: field_certification_details
+entity_type: paragraph
+bundle: quality_certification
+label: 'Certification Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

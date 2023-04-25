@@ -1,0 +1,31 @@
+uuid: aeb499b6-91b9-4837-a438-a65d83c4f601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vehicles_sub_segment
+    - paragraphs.paragraphs_type.specific_sub_segment
+    - taxonomy.vocabulary.sub_segments_vehicle
+  module:
+    - entity_reference_revisions
+id: paragraph.specific_sub_segment.field_vehicles_sub_segment
+field_name: field_vehicles_sub_segment
+entity_type: paragraph
+bundle: specific_sub_segment
+label: 'Vehicles Sub Segment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sub_segments_vehicle: sub_segments_vehicle
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

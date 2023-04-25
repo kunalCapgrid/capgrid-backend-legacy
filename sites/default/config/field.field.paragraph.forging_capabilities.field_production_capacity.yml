@@ -1,0 +1,19 @@
+uuid: 7aca1d92-9671-4519-a20e-8ef38e6f9a3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.forging_capabilities
+id: paragraph.forging_capabilities.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: forging_capabilities
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

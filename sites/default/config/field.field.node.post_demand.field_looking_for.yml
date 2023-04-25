@@ -1,0 +1,21 @@
+uuid: c155c959-90fc-4031-bc88-6ada6eaa99db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_looking_for
+    - node.type.post_demand
+  module:
+    - options
+id: node.post_demand.field_looking_for
+field_name: field_looking_for
+entity_type: node
+bundle: post_demand
+label: 'Looking For'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,28 @@
+uuid: 409fe6a1-a381-4aef-a009-f4bc815e5561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_supplier_docs
+    - media.type.document
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_supplier_docs
+field_name: field_supplier_docs
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Supplier Docs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

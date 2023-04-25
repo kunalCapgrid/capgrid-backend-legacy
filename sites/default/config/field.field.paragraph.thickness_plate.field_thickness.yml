@@ -1,0 +1,31 @@
+uuid: f43ad12e-e2d8-430d-8d07-e00a5f12d2c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_thickness
+    - paragraphs.paragraphs_type.thickness_plate
+    - taxonomy.vocabulary.thickness
+  module:
+    - entity_reference_revisions
+id: paragraph.thickness_plate.field_thickness
+field_name: field_thickness
+entity_type: paragraph
+bundle: thickness_plate
+label: Thickness
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thickness: thickness
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

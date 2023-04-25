@@ -1,0 +1,19 @@
+uuid: 55fa9935-8411-4410-8aa8-6def5211e456
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_manufacturing_process
+    - node.type.post_demand
+id: node.post_demand.field_manufacturing_process
+field_name: field_manufacturing_process
+entity_type: node
+bundle: post_demand
+label: 'Manufacturing Process'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

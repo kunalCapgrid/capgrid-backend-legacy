@@ -1,0 +1,46 @@
+uuid: fe320a62-910c-429c-95eb-66682d753e78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thickness_metal_plate
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.thickness_plate
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_thickness_metal_plate
+field_name: field_thickness_metal_plate
+entity_type: node
+bundle: supplier_details
+label: 'What is the maximum thickness of the metal plate that you handle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      thickness_plate: thickness_plate
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 7
+        enabled: false
+      major_production_capabilities:
+        weight: 8
+        enabled: false
+      material_grade:
+        weight: 9
+        enabled: false
+      part_category:
+        weight: 10
+        enabled: false
+      specific_sub_segment:
+        weight: 11
+        enabled: false
+      thickness_plate:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 7a3320ec-9f83-4930-8401-e3f14aa604bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selec
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_selec
+field_name: field_selec
+entity_type: node
+bundle: purchaser_requirements
+label: Selec
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

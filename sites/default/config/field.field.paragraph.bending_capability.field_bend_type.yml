@@ -1,0 +1,29 @@
+uuid: 350af8d2-cd09-4df7-96d9-f3e6b7a5052a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bend_type
+    - paragraphs.paragraphs_type.bending_capability
+    - taxonomy.vocabulary.bend_type
+id: paragraph.bending_capability.field_bend_type
+field_name: field_bend_type
+entity_type: paragraph
+bundle: bending_capability
+label: 'Bend Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bend_type: bend_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: d7da428e-7e4a-466a-b41c-84a3ca854a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selected_supplier
+    - node.type.purchaser_requirements
+    - node.type.supplier_details
+id: node.purchaser_requirements.field_selected_supplier
+field_name: field_selected_supplier
+entity_type: node
+bundle: purchaser_requirements
+label: 'Selected Supplier'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_details: supplier_details
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

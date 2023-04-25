@@ -1,0 +1,23 @@
+uuid: bd713c20-9c2d-4e0c-a397-6883d5bb8d24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nda_as_attachment
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_nda_as_attachment
+field_name: field_nda_as_attachment
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'NDA as Attachment'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

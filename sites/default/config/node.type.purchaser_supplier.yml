@@ -1,0 +1,18 @@
+uuid: 4016e65c-3bf0-4674-943f-e1b4c0a64724
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Purchaser Supplier'
+type: purchaser_supplier
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

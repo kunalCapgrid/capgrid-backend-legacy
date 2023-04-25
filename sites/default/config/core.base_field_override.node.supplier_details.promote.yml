@@ -1,0 +1,22 @@
+uuid: 5d0a1d8d-b277-43a5-91f7-b29da5d8d151
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.supplier_details
+id: node.supplier_details.promote
+field_name: promote
+entity_type: node
+bundle: supplier_details
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 4ead4e49-841e-4616-bf0c-73ec366bb84d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_profile_type
+field_name: field_profile_type
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: supplier
+      label: Supplier
+    -
+      value: 'Original Equipment Manufacturer'
+      label: 'Original Equipment Manufacturer'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

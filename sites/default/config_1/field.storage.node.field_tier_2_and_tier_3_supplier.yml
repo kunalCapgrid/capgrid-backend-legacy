@@ -1,0 +1,27 @@
+uuid: 3477a3af-3268-4619-952d-8bdb60c8988f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tier_2_and_tier_3_supplier
+field_name: field_tier_2_and_tier_3_supplier
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Yes'
+      label: 'Yes'
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

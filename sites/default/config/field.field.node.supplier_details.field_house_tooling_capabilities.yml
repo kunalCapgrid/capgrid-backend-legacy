@@ -1,0 +1,21 @@
+uuid: cd42ebec-8ac7-4f54-a88c-a9ff72556fc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_house_tooling_capabilities
+    - node.type.supplier_details
+  module:
+    - options
+id: node.supplier_details.field_house_tooling_capabilities
+field_name: field_house_tooling_capabilities
+entity_type: node
+bundle: supplier_details
+label: 'In House Tooling Capabilities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

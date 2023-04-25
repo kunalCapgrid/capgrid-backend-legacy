@@ -1,0 +1,34 @@
+uuid: f8e49d3b-afed-480b-8ca3-15f53312e321
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.question_response.field_message_body
+    - field.field.paragraph.question_response.field_message_owner
+    - paragraphs.paragraphs_type.question_response
+id: paragraph.question_response.default
+targetEntityType: paragraph
+bundle: question_response
+mode: default
+content:
+  field_message_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_message_owner:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,7 @@
+purchaser api access:
+  title: 'Purchaser API Access'
+  restrict access: false
+
+supplier api access:
+  title: 'Supplier API Access'
+  restrict access: false

@@ -1,0 +1,23 @@
+uuid: 154e3cf4-3a0f-41e9-b5a0-a8d45fab79b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_invite_rfq
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_invite_rfq
+field_name: field_invite_rfq
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Invite RFQ'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

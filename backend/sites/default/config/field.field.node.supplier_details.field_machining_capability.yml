@@ -1,0 +1,58 @@
+uuid: 57e8ea5c-08a2-4f33-93b3-493f2e124765
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_machining_capability
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.machining_capability
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_machining_capability
+field_name: field_machining_capability
+entity_type: node
+bundle: supplier_details
+label: 'Machining Capability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      machining_capability: machining_capability
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 11
+        enabled: false
+      casting_capabilities:
+        weight: 12
+        enabled: false
+      forging_capabilities:
+        weight: 13
+        enabled: false
+      machining_capability:
+        enabled: true
+        weight: 14
+      major_production_capabilities:
+        weight: 15
+        enabled: false
+      material_grade:
+        weight: 16
+        enabled: false
+      material_weight:
+        weight: 17
+        enabled: false
+      part_category:
+        weight: 18
+        enabled: false
+      specific_sub_segment:
+        weight: 19
+        enabled: false
+      thickness_plate:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

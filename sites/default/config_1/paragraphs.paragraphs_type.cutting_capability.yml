@@ -1,0 +1,9 @@
+uuid: 74b87e62-2987-47f7-8d35-81a1410ba561
+langcode: en
+status: true
+dependencies: {  }
+id: cutting_capability
+label: 'Cutting Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

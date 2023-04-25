@@ -1,0 +1,9 @@
+uuid: aa828f2d-a728-4616-95eb-c8f5c1d4ee20
+langcode: en
+status: true
+dependencies: {  }
+id: bending_capability
+label: 'Bending Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

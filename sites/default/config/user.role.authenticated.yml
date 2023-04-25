@@ -1,0 +1,36 @@
+uuid: 04f54178-fc04-40e7-ab95-17f718a5cdd9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'administer permissions'
+  - 'administer taxonomy'
+  - 'create article content'
+  - 'create page content'
+  - 'create paragraph content supplier_longlist'
+  - 'create paragraph content supplier_shortlist'
+  - 'create purchaser_requirements content'
+  - 'create supplier_details content'
+  - 'edit any purchaser_requirements content'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update paragraph content supplier_longlist'
+  - 'update paragraph content supplier_shortlist'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view paragraph content business_segment'
+  - 'view paragraph content part_category'
+  - 'view paragraph content supplier_longlist'
+  - 'view paragraph content supplier_shortlist'

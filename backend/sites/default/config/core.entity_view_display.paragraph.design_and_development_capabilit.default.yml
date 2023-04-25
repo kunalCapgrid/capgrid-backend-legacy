@@ -1,0 +1,40 @@
+uuid: e02d6761-f82c-4853-8c92-061574b9cb16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.design_and_development_capabilit.field_design_and_development_typ
+    - field.field.paragraph.design_and_development_capabilit.field_in_house
+    - field.field.paragraph.design_and_development_capabilit.field_outsourced
+    - paragraphs.paragraphs_type.design_and_development_capabilit
+id: paragraph.design_and_development_capabilit.default
+targetEntityType: paragraph
+bundle: design_and_development_capabilit
+mode: default
+content:
+  field_design_and_development_typ:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_in_house:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_outsourced:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

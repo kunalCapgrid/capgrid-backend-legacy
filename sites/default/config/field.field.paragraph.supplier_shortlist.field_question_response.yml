@@ -1,0 +1,100 @@
+uuid: 764a38a2-8d6c-4a79-b4d4-155090769a16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_question_response
+    - paragraphs.paragraphs_type.question_response
+    - paragraphs.paragraphs_type.supplier_shortlist
+  module:
+    - entity_reference_revisions
+id: paragraph.supplier_shortlist.field_question_response
+field_name: field_question_response
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Question Response'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      question_response: question_response
+    target_bundles_drag_drop:
+      assembly_capability:
+        weight: 25
+        enabled: false
+      bending_capability:
+        weight: 26
+        enabled: false
+      business_segment:
+        weight: 27
+        enabled: false
+      casting_capabilities:
+        weight: 28
+        enabled: false
+      cutting_capability:
+        weight: 29
+        enabled: false
+      design_and_development_capabilit:
+        weight: 30
+        enabled: false
+      forging_capabilities:
+        weight: 31
+        enabled: false
+      heat_treatment_capability:
+        weight: 32
+        enabled: false
+      machining_capability:
+        weight: 33
+        enabled: false
+      major_production_capabilities:
+        weight: 34
+        enabled: false
+      material_grade:
+        weight: 35
+        enabled: false
+      material_weight:
+        weight: 36
+        enabled: false
+      moulding_capability:
+        weight: 37
+        enabled: false
+      painting_capability:
+        weight: 38
+        enabled: false
+      part_category:
+        weight: 39
+        enabled: false
+      quality_certification:
+        weight: 40
+        enabled: false
+      question_response:
+        enabled: true
+        weight: 41
+      requirement_response:
+        weight: 42
+        enabled: false
+      specific_sub_segment:
+        weight: 43
+        enabled: false
+      supplier_longlist:
+        weight: 44
+        enabled: false
+      supplier_shortlist:
+        weight: 45
+        enabled: false
+      testing_facility:
+        weight: 46
+        enabled: false
+      thickness_plate:
+        weight: 47
+        enabled: false
+      welding_capability:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

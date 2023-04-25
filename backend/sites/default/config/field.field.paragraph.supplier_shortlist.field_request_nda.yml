@@ -1,0 +1,23 @@
+uuid: 4e80dd1d-0234-4da8-8f07-4156812661c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_request_nda
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_request_nda
+field_name: field_request_nda
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Request NDA'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

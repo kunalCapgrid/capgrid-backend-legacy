@@ -1,0 +1,14 @@
+uuid: d2a87262-cbb5-48ac-b95b-cd84a0e0124a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.verified_purchaser_oem
+  module:
+    - user
+id: user_add_role_action.verified_purchaser_oem
+label: 'Add the Verified Purchaser (OEM) role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: verified_purchaser_oem

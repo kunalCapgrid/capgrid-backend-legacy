@@ -1,0 +1,30 @@
+uuid: 3b21fe64-d7d1-426a-bd27-a7ead04c7e47
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_demand_type
+field_name: field_demand_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Prototype Development'
+      label: 'Prototype Development'
+    -
+      value: 'Recurring Demand'
+      label: 'Recurring Demand'
+    -
+      value: 'Aftermarket Parts'
+      label: 'Aftermarket Parts'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

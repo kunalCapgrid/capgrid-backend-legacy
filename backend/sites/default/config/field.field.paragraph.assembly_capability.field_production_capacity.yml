@@ -1,0 +1,19 @@
+uuid: 41d5f433-70ec-496e-9fd2-3557c22e851b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.assembly_capability
+id: paragraph.assembly_capability.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: assembly_capability
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,67 @@
+uuid: 5623cd36-e028-4d86-ab88-be75ff57ffb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_welding_capability
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.welding_capability
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_welding_capability
+field_name: field_welding_capability
+entity_type: node
+bundle: supplier_details
+label: 'Welding Capability'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      welding_capability: welding_capability
+    target_bundles_drag_drop:
+      welding_capability:
+        enabled: true
+        weight: 14
+      bending_capability:
+        weight: 15
+        enabled: false
+      business_segment:
+        weight: 16
+        enabled: false
+      casting_capabilities:
+        weight: 17
+        enabled: false
+      cutting_capability:
+        weight: 18
+        enabled: false
+      forging_capabilities:
+        weight: 19
+        enabled: false
+      machining_capability:
+        weight: 20
+        enabled: false
+      major_production_capabilities:
+        weight: 21
+        enabled: false
+      material_grade:
+        weight: 22
+        enabled: false
+      material_weight:
+        weight: 23
+        enabled: false
+      part_category:
+        weight: 24
+        enabled: false
+      specific_sub_segment:
+        weight: 25
+        enabled: false
+      thickness_plate:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

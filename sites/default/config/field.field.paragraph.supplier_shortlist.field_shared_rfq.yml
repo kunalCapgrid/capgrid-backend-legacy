@@ -1,0 +1,23 @@
+uuid: 1ea62192-e6d7-4b3a-8a98-a6594c76bae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_shared_rfq
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_shared_rfq
+field_name: field_shared_rfq
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Shared RFQ'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

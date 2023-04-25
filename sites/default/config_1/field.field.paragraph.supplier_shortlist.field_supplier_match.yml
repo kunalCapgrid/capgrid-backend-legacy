@@ -1,0 +1,19 @@
+uuid: ba07bbd4-f15d-416a-9472-be1ff28153ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_supplier_match
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_supplier_match
+field_name: field_supplier_match
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Supplier Match'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

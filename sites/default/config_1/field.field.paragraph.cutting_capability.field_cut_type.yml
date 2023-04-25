@@ -1,0 +1,29 @@
+uuid: 3ba0ad1d-b060-4443-be1c-b41774af1f6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cut_type
+    - paragraphs.paragraphs_type.cutting_capability
+    - taxonomy.vocabulary.cutting_type
+id: paragraph.cutting_capability.field_cut_type
+field_name: field_cut_type
+entity_type: paragraph
+bundle: cutting_capability
+label: 'Cut Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cutting_type: cutting_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

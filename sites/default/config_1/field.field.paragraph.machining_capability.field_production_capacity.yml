@@ -1,0 +1,19 @@
+uuid: 092b4fbc-2bdc-4861-95fe-44871ab82dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.machining_capability
+id: paragraph.machining_capability.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: machining_capability
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

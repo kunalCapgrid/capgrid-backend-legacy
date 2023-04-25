@@ -1,0 +1,34 @@
+uuid: abd1152b-5bb6-48c7-8589-6051eac51132
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quality_certification.field_certification_details
+    - field.field.paragraph.quality_certification.field_certification_type
+    - paragraphs.paragraphs_type.quality_certification
+id: paragraph.quality_certification.default
+targetEntityType: paragraph
+bundle: quality_certification
+mode: default
+content:
+  field_certification_details:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_certification_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

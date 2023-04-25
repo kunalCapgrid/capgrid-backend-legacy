@@ -1,0 +1,8 @@
+uuid: 57856df0-0118-440e-a4a2-3f932bc9ab59
+langcode: en
+status: true
+dependencies: {  }
+name: 'Design and Development Type'
+vid: design_and_development_type
+description: ''
+weight: 0

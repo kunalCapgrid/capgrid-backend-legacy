@@ -1,0 +1,19 @@
+uuid: 8c5ed5f9-f629-452a-b3b9-0f56cae03c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quantity_certification
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_quantity_certification
+field_name: field_quantity_certification
+entity_type: node
+bundle: purchaser_requirements
+label: 'Quantity Certification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

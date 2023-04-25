@@ -1,0 +1,9 @@
+uuid: 9e91b8da-9c61-40ac-abef-04899e261673
+langcode: en
+status: true
+dependencies: {  }
+id: moulding_capability
+label: 'Moulding Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

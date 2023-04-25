@@ -1,0 +1,8 @@
+uuid: c3e405b4-782a-4159-af2b-c36b55fcf9bb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Paint Type'
+vid: paint_type
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 050d7ac2-d6bc-472d-991b-ddb6a5a4fe66
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - serialization
+    - taxonomy
+    - user
+id: entity.taxonomy_vocabulary
+plugin_id: 'entity:taxonomy_vocabulary'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - cookie

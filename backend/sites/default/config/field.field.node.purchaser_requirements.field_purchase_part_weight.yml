@@ -1,0 +1,19 @@
+uuid: 2d9ed1ea-f8f1-4e75-9496-dd3166ae6939
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purchase_part_weight
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_purchase_part_weight
+field_name: field_purchase_part_weight
+entity_type: node
+bundle: purchaser_requirements
+label: 'Part Weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

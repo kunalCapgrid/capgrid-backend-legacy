@@ -1,0 +1,31 @@
+uuid: 38693672-97b1-4b5f-8de1-88a26de50653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parts_category
+    - paragraphs.paragraphs_type.part_category
+    - taxonomy.vocabulary.parts_category
+  module:
+    - entity_reference_revisions
+id: paragraph.part_category.field_parts_category
+field_name: field_parts_category
+entity_type: paragraph
+bundle: part_category
+label: 'Parts Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      parts_category: parts_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

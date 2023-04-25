@@ -1,0 +1,9 @@
+uuid: d21dea02-c01a-4920-b4b1-6f23dbb6a401
+langcode: en
+status: true
+dependencies: {  }
+id: welding_capability
+label: 'Welding Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

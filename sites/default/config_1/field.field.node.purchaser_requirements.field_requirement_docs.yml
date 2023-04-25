@@ -1,0 +1,28 @@
+uuid: f0dab515-05dd-4af7-ad3a-a05c82802b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requirement_docs
+    - media.type.document
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_requirement_docs
+field_name: field_requirement_docs
+entity_type: node
+bundle: purchaser_requirements
+label: 'Requirement Docs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

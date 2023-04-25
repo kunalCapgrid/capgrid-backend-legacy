@@ -1,0 +1,25 @@
+uuid: 76fd9f2b-d2e4-4d86-8a41-539b5c1940a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - hal
+    - jwt
+    - paragraphs
+    - serialization
+    - user
+id: entity.paragraph
+plugin_id: 'entity:paragraph'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - jwt_auth
+    - cookie

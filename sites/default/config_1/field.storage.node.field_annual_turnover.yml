@@ -1,0 +1,54 @@
+uuid: 1a8ec27c-e7e7-45c7-b0e1-aa34278226a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_annual_turnover
+field_name: field_annual_turnover
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Upto Rs 20 Lakhs'
+      label: 'Upto Rs 20 Lakhs'
+    -
+      value: 'Between 20 and 50 Lakhs'
+      label: 'Between 20 and 50 Lakhs'
+    -
+      value: 'Between 50 Lakhs and 1 Crore'
+      label: 'Between 50 Lakhs and 1 Crore'
+    -
+      value: 'Between 1 Crore and 10 Crore'
+      label: 'Between 1 Crore and 10 Crore'
+    -
+      value: 'Rs. 2 - 5 Crore'
+      label: 'Between 2 Crore and 5 Crore'
+    -
+      value: 'Rs. 10 - 25 Crore'
+      label: 'Between 10 Crore and 25 Crore'
+    -
+      value: 'Between 10 Crore and 30 Crore'
+      label: 'Between 10 Crore and 30 Crore'
+    -
+      value: 'Between 30 Crore and 50 Crore'
+      label: 'Between 30 Crore and 50 Crore'
+    -
+      value: 'Between 50 Crore and 70 Crore'
+      label: 'Between 50 Crore and 70 Crore'
+    -
+      value: 'Between 70 Crore and 100 Crore'
+      label: 'Between 70 Crore and 100 Crore'
+    -
+      value: 'Greater than 100 Crore'
+      label: 'Greater than 100 Crore'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

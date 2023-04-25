@@ -1,0 +1,21 @@
+uuid: 0706f28c-a3f0-4e50-9fcf-b6a8be25ffd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

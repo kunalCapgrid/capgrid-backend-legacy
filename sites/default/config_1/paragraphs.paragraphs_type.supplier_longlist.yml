@@ -1,0 +1,9 @@
+uuid: 6e04663b-866f-4c04-879e-b3fe39816de5
+langcode: en
+status: true
+dependencies: {  }
+id: supplier_longlist
+label: 'Supplier Longlist'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

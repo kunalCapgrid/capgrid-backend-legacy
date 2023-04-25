@@ -1,0 +1,19 @@
+uuid: 302252ec-267a-4cc8-b0e2-bb0603bf6905
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purchase_process_require
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_purchase_process_require
+field_name: field_purchase_process_require
+entity_type: node
+bundle: purchaser_requirements
+label: 'Process Requirements'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

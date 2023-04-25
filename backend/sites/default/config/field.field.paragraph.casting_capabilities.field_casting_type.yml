@@ -1,0 +1,31 @@
+uuid: 4a50bad4-3d48-436e-b7be-0ee2c629f6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_casting_type
+    - paragraphs.paragraphs_type.casting_capabilities
+    - taxonomy.vocabulary.casting_type
+  module:
+    - entity_reference_revisions
+id: paragraph.casting_capabilities.field_casting_type
+field_name: field_casting_type
+entity_type: paragraph
+bundle: casting_capabilities
+label: 'Casting Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      casting_type: casting_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

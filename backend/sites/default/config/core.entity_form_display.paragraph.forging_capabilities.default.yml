@@ -1,0 +1,52 @@
+uuid: 188c9399-812d-4293-bd4e-62ac452ad102
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.forging_capabilities.field_forging_type
+    - field.field.paragraph.forging_capabilities.field_production_capacity
+    - field.field.paragraph.forging_capabilities.field_weight_max
+    - field.field.paragraph.forging_capabilities.field_weight_min
+    - paragraphs.paragraphs_type.forging_capabilities
+id: paragraph.forging_capabilities.default
+targetEntityType: paragraph
+bundle: forging_capabilities
+mode: default
+content:
+  field_forging_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_production_capacity:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_weight_max:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_weight_min:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,43 @@
+uuid: 950c102c-49b4-4e76-a643-ca0547c6ef3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_materials_handle
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.material_grade
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_materials_handle
+field_name: field_materials_handle
+entity_type: node
+bundle: supplier_details
+label: 'What types of materials can you handle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      material_grade: material_grade
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 6
+        enabled: false
+      major_production_capabilities:
+        weight: 7
+        enabled: false
+      material_grade:
+        enabled: true
+        weight: 8
+      part_category:
+        weight: 9
+        enabled: false
+      specific_sub_segment:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

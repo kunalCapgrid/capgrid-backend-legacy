@@ -1,0 +1,19 @@
+uuid: 1a838c26-bf91-40fa-8789-b799b1acb5d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_maximum_weight
+    - paragraphs.paragraphs_type.heat_treatment_capability
+id: paragraph.heat_treatment_capability.field_maximum_weight
+field_name: field_maximum_weight
+entity_type: paragraph
+bundle: heat_treatment_capability
+label: 'Maximum Weight'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

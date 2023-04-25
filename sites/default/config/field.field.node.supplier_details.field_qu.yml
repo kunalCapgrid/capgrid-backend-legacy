@@ -1,0 +1,21 @@
+uuid: 521e81bc-b32f-4fa8-83f9-3ec503b85643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qu
+    - node.type.supplier_details
+id: node.supplier_details.field_qu
+field_name: field_qu
+entity_type: node
+bundle: supplier_details
+label: Qu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

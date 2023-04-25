@@ -1,0 +1,19 @@
+uuid: 0c2bf945-6546-4bed-beeb-4c2f02fc500c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_requirement_response
+field_name: field_requirement_response
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

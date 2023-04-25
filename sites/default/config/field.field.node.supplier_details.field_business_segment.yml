@@ -1,0 +1,31 @@
+uuid: f3e37c66-4f89-4e67-9589-3a8fdcac660e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_segment
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.business_segment
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_business_segment
+field_name: field_business_segment
+entity_type: node
+bundle: supplier_details
+label: 'Which business segment does your company service'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      business_segment: business_segment
+    target_bundles_drag_drop:
+      business_segment:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

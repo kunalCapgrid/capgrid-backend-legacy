@@ -1,0 +1,31 @@
+uuid: 96469641-367f-44c5-bbf7-3c40a61d3078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.painting_capability.field_paint_type
+    - field.field.paragraph.painting_capability.field_production_capacity
+    - paragraphs.paragraphs_type.painting_capability
+id: paragraph.painting_capability.default
+targetEntityType: paragraph
+bundle: painting_capability
+mode: default
+content:
+  field_paint_type:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_production_capacity:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

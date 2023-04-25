@@ -1,0 +1,8 @@
+uuid: 36b2f302-b2ef-4d0b-831e-a126e25b6294
+langcode: en
+status: true
+dependencies: {  }
+name: 'Bend Type'
+vid: bend_type
+description: ''
+weight: 0

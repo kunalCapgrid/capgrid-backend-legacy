@@ -1,0 +1,19 @@
+uuid: 2ca9bbf0-f38c-496e-a14f-0768a3a081b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_requisition_ref
+field_name: field_requisition_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

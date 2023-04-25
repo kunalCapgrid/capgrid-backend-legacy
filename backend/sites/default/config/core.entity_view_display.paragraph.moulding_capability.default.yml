@@ -1,0 +1,40 @@
+uuid: e48daae7-602a-42e0-8a84-ae7252ca4675
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.moulding_capability.field_moulding_type
+    - field.field.paragraph.moulding_capability.field_production_capacity
+    - field.field.paragraph.moulding_capability.field_size
+    - paragraphs.paragraphs_type.moulding_capability
+id: paragraph.moulding_capability.default
+targetEntityType: paragraph
+bundle: moulding_capability
+mode: default
+content:
+  field_moulding_type:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_production_capacity:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_size:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,29 @@
+uuid: 0f1b1fb4-a5c2-443b-b61a-5b5d19e8c6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_cart_suppliers
+    - node.type.supplier_details
+  module:
+    - user
+id: user.user.field_cart_suppliers
+field_name: field_cart_suppliers
+entity_type: user
+bundle: user
+label: 'Cart Suppliers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      supplier_details: supplier_details
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

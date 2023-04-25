@@ -1,0 +1,64 @@
+uuid: f4491d84-49ea-4969-92d8-c7b5d79c8740
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_cart_suppliers
+    - field.field.user.user.field_create_from_website
+    - field.field.user.user.field_location
+    - field.field.user.user.field_nda_authority_designation
+    - field.field.user.user.field_nda_authority_name
+    - field.field.user.user.field_nda_details
+    - field.field.user.user.field_organization
+    - field.field.user.user.field_organization_name
+    - field.field.user.user.field_phone_number
+    - field.field.user.user.field_preference
+    - field.field.user.user.field_profile_name
+    - field.field.user.user.field_profile_type
+    - field.field.user.user.field_rfq_prep_days
+    - field.field.user.user.field_rfq_questionnaire
+    - field.field.user.user.field_shortlist_days
+    - field.field.user.user.field_supplier_profile
+    - field.field.user.user.field_vehicle_segment
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_cart_suppliers: true
+  field_create_from_website: true
+  field_location: true
+  field_nda_authority_designation: true
+  field_nda_authority_name: true
+  field_nda_details: true
+  field_organization: true
+  field_organization_name: true
+  field_phone_number: true
+  field_preference: true
+  field_profile_name: true
+  field_profile_type: true
+  field_rfq_prep_days: true
+  field_rfq_questionnaire: true
+  field_shortlist_days: true
+  field_supplier_profile: true
+  field_vehicle_segment: true
+  member_for: true
+  search_api_excerpt: true

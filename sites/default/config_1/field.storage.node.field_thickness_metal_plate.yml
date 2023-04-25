@@ -1,0 +1,21 @@
+uuid: 1a83d4f0-1dee-4ac4-846a-fa862c966118
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_thickness_metal_plate
+field_name: field_thickness_metal_plate
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

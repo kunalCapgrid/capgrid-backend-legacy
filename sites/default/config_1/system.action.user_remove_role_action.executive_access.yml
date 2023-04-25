@@ -1,0 +1,14 @@
+uuid: 64325a98-0898-47d7-884a-ead58db9263a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.executive_access
+  module:
+    - user
+id: user_remove_role_action.executive_access
+label: 'Remove the Executive Access role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: executive_access

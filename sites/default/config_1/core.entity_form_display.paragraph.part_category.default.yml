@@ -1,0 +1,36 @@
+uuid: b60476d7-8ba9-4dc8-a5c0-5fd2bbeb4a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.part_category.field_list_of_parts
+    - field.field.paragraph.part_category.field_parts_category
+    - paragraphs.paragraphs_type.part_category
+  module:
+    - entity_reference_revisions
+id: paragraph.part_category.default
+targetEntityType: paragraph
+bundle: part_category
+mode: default
+content:
+  field_list_of_parts:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_parts_category:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

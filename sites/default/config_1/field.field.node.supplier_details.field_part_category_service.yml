@@ -1,0 +1,37 @@
+uuid: 9a7445ce-07de-4b56-95aa-48e9f7d76f0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_part_category_service
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.part_category
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_part_category_service
+field_name: field_part_category_service
+entity_type: node
+bundle: supplier_details
+label: 'Which part category do you service'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      part_category: part_category
+    target_bundles_drag_drop:
+      business_segment:
+        weight: 4
+        enabled: false
+      part_category:
+        enabled: true
+        weight: 5
+      specific_sub_segment:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

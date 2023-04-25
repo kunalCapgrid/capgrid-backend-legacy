@@ -1,0 +1,9 @@
+uuid: 630272e8-f48d-48d6-997e-b16ab7b4b48d
+langcode: en
+status: true
+dependencies: {  }
+id: supplier
+label: Supplier
+weight: 3
+is_admin: null
+permissions: {  }

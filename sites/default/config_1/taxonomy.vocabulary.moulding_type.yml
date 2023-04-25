@@ -1,0 +1,8 @@
+uuid: 3b0c56c8-bed2-4785-9262-c0de9632499c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Moulding Type'
+vid: moulding_type
+description: ''
+weight: 0

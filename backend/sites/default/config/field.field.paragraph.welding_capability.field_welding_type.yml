@@ -1,0 +1,29 @@
+uuid: 21e69195-4d1a-425f-8a3a-2c4b4e7f388d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_welding_type
+    - paragraphs.paragraphs_type.welding_capability
+    - taxonomy.vocabulary.welding_type
+id: paragraph.welding_capability.field_welding_type
+field_name: field_welding_type
+entity_type: paragraph
+bundle: welding_capability
+label: 'Welding Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      welding_type: welding_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

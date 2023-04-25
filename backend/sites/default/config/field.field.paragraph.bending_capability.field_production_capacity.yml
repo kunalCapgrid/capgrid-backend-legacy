@@ -1,0 +1,19 @@
+uuid: c5cd314c-89df-49e4-8b24-c69fdfe4db99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.bending_capability
+id: paragraph.bending_capability.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: bending_capability
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

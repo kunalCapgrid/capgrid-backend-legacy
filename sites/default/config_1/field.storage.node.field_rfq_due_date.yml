@@ -1,0 +1,20 @@
+uuid: ede04727-6ebb-4440-baf9-4f11b9bfeccf
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_rfq_due_date
+field_name: field_rfq_due_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 661d5c5e-e016-4687-a237-54d86d1a8297
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_batch_size
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_batch_size
+field_name: field_batch_size
+entity_type: node
+bundle: purchaser_requirements
+label: 'Batch Size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

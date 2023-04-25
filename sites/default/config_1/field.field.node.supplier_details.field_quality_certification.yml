@@ -1,0 +1,82 @@
+uuid: 23f28bd0-b3ee-4b75-8e13-44c31332364c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quality_certification
+    - node.type.supplier_details
+    - paragraphs.paragraphs_type.quality_certification
+  module:
+    - entity_reference_revisions
+id: node.supplier_details.field_quality_certification
+field_name: field_quality_certification
+entity_type: node
+bundle: supplier_details
+label: 'Quality Certification'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      quality_certification: quality_certification
+    target_bundles_drag_drop:
+      assembly_capability:
+        weight: 19
+        enabled: false
+      bending_capability:
+        weight: 20
+        enabled: false
+      business_segment:
+        weight: 21
+        enabled: false
+      casting_capabilities:
+        weight: 22
+        enabled: false
+      cutting_capability:
+        weight: 23
+        enabled: false
+      forging_capabilities:
+        weight: 24
+        enabled: false
+      heat_treatment_capability:
+        weight: 25
+        enabled: false
+      machining_capability:
+        weight: 26
+        enabled: false
+      major_production_capabilities:
+        weight: 27
+        enabled: false
+      material_grade:
+        weight: 28
+        enabled: false
+      material_weight:
+        weight: 29
+        enabled: false
+      moulding_capability:
+        weight: 30
+        enabled: false
+      painting_capability:
+        weight: 31
+        enabled: false
+      part_category:
+        weight: 32
+        enabled: false
+      quality_certification:
+        enabled: true
+        weight: 33
+      specific_sub_segment:
+        weight: 34
+        enabled: false
+      thickness_plate:
+        weight: 35
+        enabled: false
+      welding_capability:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

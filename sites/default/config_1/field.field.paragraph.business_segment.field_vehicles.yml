@@ -1,0 +1,31 @@
+uuid: ac84046f-3f97-42b0-a6bf-fc3f10d7097b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vehicles
+    - paragraphs.paragraphs_type.business_segment
+    - taxonomy.vocabulary.segment_vechile
+  module:
+    - entity_reference_revisions
+id: paragraph.business_segment.field_vehicles
+field_name: field_vehicles
+entity_type: paragraph
+bundle: business_segment
+label: Vehicles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      segment_vechile: segment_vechile
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

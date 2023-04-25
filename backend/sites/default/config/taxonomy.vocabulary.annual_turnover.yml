@@ -1,0 +1,8 @@
+uuid: 348ca4aa-1333-4c5a-96ce-5bc03f47733f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Annual Turnover'
+vid: annual_turnover
+description: 'Annual Turnover of Supplier'
+weight: 0

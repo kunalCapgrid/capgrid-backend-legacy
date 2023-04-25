@@ -1,0 +1,32 @@
+uuid: 0a9dba85-d8b5-4185-96e5-e5260a910edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supplier_longlist.field_priority
+    - field.field.paragraph.supplier_longlist.field_supplier
+    - paragraphs.paragraphs_type.supplier_longlist
+  module:
+    - options
+id: paragraph.supplier_longlist.default
+targetEntityType: paragraph
+bundle: supplier_longlist
+mode: default
+content:
+  field_priority:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_supplier:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

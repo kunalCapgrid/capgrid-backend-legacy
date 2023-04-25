@@ -1,0 +1,8 @@
+uuid: 2e955676-2fd9-4360-82f2-f6a6c79afee0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Casting Type'
+vid: casting_type
+description: ''
+weight: 0

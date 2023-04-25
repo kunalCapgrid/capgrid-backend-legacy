@@ -1,0 +1,45 @@
+uuid: 63f9fe0e-d7a2-4ae3-bf4c-5c8e77831234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.material_weight.field_material
+    - field.field.paragraph.material_weight.field_weight_max
+    - field.field.paragraph.material_weight.field_weight_min
+    - paragraphs.paragraphs_type.material_weight
+  module:
+    - entity_reference_revisions
+id: paragraph.material_weight.default
+targetEntityType: paragraph
+bundle: material_weight
+mode: default
+content:
+  field_material:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+  field_weight_max:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_weight_min:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

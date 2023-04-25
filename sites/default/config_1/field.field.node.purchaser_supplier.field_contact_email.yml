@@ -1,0 +1,19 @@
+uuid: 1bed9750-1c29-4ad3-aae5-64d0f3661d09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_email
+    - node.type.purchaser_supplier
+id: node.purchaser_supplier.field_contact_email
+field_name: field_contact_email
+entity_type: node
+bundle: purchaser_supplier
+label: 'Contact Email'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,34 @@
+uuid: b6efadd9-d9f9-45da-ad70-a65a07a34e1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bending_capability.field_bend_type
+    - field.field.paragraph.bending_capability.field_production_capacity
+    - paragraphs.paragraphs_type.bending_capability
+id: paragraph.bending_capability.default
+targetEntityType: paragraph
+bundle: bending_capability
+mode: default
+content:
+  field_bend_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_production_capacity:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

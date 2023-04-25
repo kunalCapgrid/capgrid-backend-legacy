@@ -1,0 +1,9 @@
+uuid: 5ee97251-42ed-416d-a274-27da60266eb8
+langcode: en
+status: true
+dependencies: {  }
+id: material_grade
+label: 'Material Grade'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

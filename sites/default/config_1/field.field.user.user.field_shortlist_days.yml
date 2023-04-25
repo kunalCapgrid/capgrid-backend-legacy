@@ -1,0 +1,24 @@
+uuid: 3699ab1d-3e20-4326-a1c5-7cea4016113b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_shortlist_days
+  module:
+    - user
+id: user.user.field_shortlist_days
+field_name: field_shortlist_days
+entity_type: user
+bundle: user
+label: 'Shortlist Days'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,52 @@
+uuid: e5181e9b-42ca-43ce-b015-c4965731d855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.casting_capabilities.field_casting_type
+    - field.field.paragraph.casting_capabilities.field_maximum_weight
+    - field.field.paragraph.casting_capabilities.field_minimum_weight
+    - field.field.paragraph.casting_capabilities.field_production_capacity
+    - paragraphs.paragraphs_type.casting_capabilities
+  module:
+    - entity_reference_revisions
+id: paragraph.casting_capabilities.default
+targetEntityType: paragraph
+bundle: casting_capabilities
+mode: default
+content:
+  field_casting_type:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_maximum_weight:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_minimum_weight:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_production_capacity:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

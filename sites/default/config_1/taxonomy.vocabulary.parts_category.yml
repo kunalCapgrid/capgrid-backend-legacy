@@ -1,0 +1,8 @@
+uuid: 001d52e7-24c8-4abf-ab76-eda5ec5a29fa
+langcode: en
+status: true
+dependencies: {  }
+name: 'Parts Category'
+vid: parts_category
+description: ''
+weight: 0

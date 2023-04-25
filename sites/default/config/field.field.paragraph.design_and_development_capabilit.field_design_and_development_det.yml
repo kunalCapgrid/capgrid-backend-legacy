@@ -1,0 +1,19 @@
+uuid: bccd0e87-0184-4262-b3e9-2cfdc5d9f581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_design_and_development_det
+    - paragraphs.paragraphs_type.design_and_development_capabilit
+id: paragraph.design_and_development_capabilit.field_design_and_development_det
+field_name: field_design_and_development_det
+entity_type: paragraph
+bundle: design_and_development_capabilit
+label: 'Design and Development Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

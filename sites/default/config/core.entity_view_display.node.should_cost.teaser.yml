@@ -1,0 +1,25 @@
+uuid: 88e14471-1261-477f-8eef-59a2114d49f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.should_cost.field_requisition_ref
+    - field.field.node.should_cost.field_should_cost_details
+    - node.type.should_cost
+  module:
+    - user
+id: node.should_cost.teaser
+targetEntityType: node
+bundle: should_cost
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_requisition_ref: true
+  field_should_cost_details: true
+  search_api_excerpt: true

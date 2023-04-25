@@ -1,0 +1,36 @@
+uuid: 38bb708d-ac32-46d4-b7c0-b1938323547a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.specific_sub_segment.field_vehicles_segment
+    - field.field.paragraph.specific_sub_segment.field_vehicles_sub_segment
+    - paragraphs.paragraphs_type.specific_sub_segment
+  module:
+    - entity_reference_revisions
+id: paragraph.specific_sub_segment.default
+targetEntityType: paragraph
+bundle: specific_sub_segment
+mode: default
+content:
+  field_vehicles_segment:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_vehicles_sub_segment:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

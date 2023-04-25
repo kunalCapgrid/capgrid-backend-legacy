@@ -1,0 +1,19 @@
+uuid: 897647ee-3dc1-4a54-b9d8-65fd91e6451c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.welding_capability
+id: paragraph.welding_capability.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: welding_capability
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

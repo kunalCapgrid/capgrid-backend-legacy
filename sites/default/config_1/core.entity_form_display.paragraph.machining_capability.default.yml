@@ -1,0 +1,43 @@
+uuid: e14a9211-4784-40b0-a714-ace202780dc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.machining_capability.field_machining_type
+    - field.field.paragraph.machining_capability.field_maximum_weight
+    - field.field.paragraph.machining_capability.field_production_capacity
+    - paragraphs.paragraphs_type.machining_capability
+id: paragraph.machining_capability.default
+targetEntityType: paragraph
+bundle: machining_capability
+mode: default
+content:
+  field_machining_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_maximum_weight:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_production_capacity:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

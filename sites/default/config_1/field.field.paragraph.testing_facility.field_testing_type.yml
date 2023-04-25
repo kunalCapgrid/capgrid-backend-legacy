@@ -1,0 +1,29 @@
+uuid: 8fbbdc41-f95b-4ed0-b2f6-2ca7f1ed3500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testing_type
+    - paragraphs.paragraphs_type.testing_facility
+    - taxonomy.vocabulary.testing_type
+id: paragraph.testing_facility.field_testing_type
+field_name: field_testing_type
+entity_type: paragraph
+bundle: testing_facility
+label: 'Testing Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      testing_type: testing_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

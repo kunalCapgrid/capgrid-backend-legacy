@@ -1,0 +1,19 @@
+uuid: 1ef710bd-6b22-448f-8a32-d213c4f50f8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_maximum_weight
+    - paragraphs.paragraphs_type.machining_capability
+id: paragraph.machining_capability.field_maximum_weight
+field_name: field_maximum_weight
+entity_type: paragraph
+bundle: machining_capability
+label: 'Maximum Weight'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

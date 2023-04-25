@@ -1,0 +1,8 @@
+uuid: d734a8c5-546b-426c-9e69-6ece0fd4e8ab
+langcode: en
+status: true
+dependencies: {  }
+name: 'Segment Vechile'
+vid: segment_vechile
+description: ''
+weight: 0

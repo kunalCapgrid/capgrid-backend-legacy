@@ -1,0 +1,28 @@
+uuid: a7f34e62-0691-4318-b113-1f04cbb4171f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_signed_nda_document
+    - media.type.document
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_signed_nda_document
+field_name: field_signed_nda_document
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Signed NDA Document'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

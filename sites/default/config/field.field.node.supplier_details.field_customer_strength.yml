@@ -1,0 +1,19 @@
+uuid: d12f65b7-a080-421e-84c5-279a49eccd0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_strength
+    - node.type.supplier_details
+id: node.supplier_details.field_customer_strength
+field_name: field_customer_strength
+entity_type: node
+bundle: supplier_details
+label: 'Customer Strength'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

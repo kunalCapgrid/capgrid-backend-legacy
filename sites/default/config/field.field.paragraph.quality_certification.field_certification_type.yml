@@ -1,0 +1,29 @@
+uuid: 00937357-76ec-4544-9533-d277014b923f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_certification_type
+    - paragraphs.paragraphs_type.quality_certification
+    - taxonomy.vocabulary.certification_type
+id: paragraph.quality_certification.field_certification_type
+field_name: field_certification_type
+entity_type: paragraph
+bundle: quality_certification
+label: 'Certification Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      certification_type: certification_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: e784f6c3-bd5e-43ae-86a9-5e0b829eae19
+langcode: en
+status: true
+dependencies: {  }
+id: business_segment
+label: 'Business Segment'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

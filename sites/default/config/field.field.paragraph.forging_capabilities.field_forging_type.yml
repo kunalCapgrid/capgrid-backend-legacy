@@ -1,0 +1,29 @@
+uuid: a6e79f5b-7210-4e54-843c-c51b474e08e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_forging_type
+    - paragraphs.paragraphs_type.forging_capabilities
+    - taxonomy.vocabulary.forging_capability
+id: paragraph.forging_capabilities.field_forging_type
+field_name: field_forging_type
+entity_type: paragraph
+bundle: forging_capabilities
+label: 'Forging Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      forging_capability: forging_capability
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

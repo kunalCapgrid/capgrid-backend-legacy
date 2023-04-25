@@ -1,0 +1,20 @@
+uuid: fdb68bb5-33c2-433e-9ffe-366bf196d44b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_uploaded_files
+field_name: field_uploaded_files
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

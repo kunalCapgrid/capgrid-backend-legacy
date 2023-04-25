@@ -1,0 +1,24 @@
+uuid: 7b14beca-98ac-44df-a8ff-9f4eb37910a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rfq_due_date
+    - node.type.purchaser_requirements
+  module:
+    - datetime
+id: node.purchaser_requirements.field_rfq_due_date
+field_name: field_rfq_due_date
+entity_type: node
+bundle: purchaser_requirements
+label: 'RFQ Due Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

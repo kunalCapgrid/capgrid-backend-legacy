@@ -1,0 +1,73 @@
+uuid: 57676443-982a-4970-a530-6e15d7f97ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.purchaser_supplier.body
+    - field.field.node.purchaser_supplier.field_company_name
+    - field.field.node.purchaser_supplier.field_contact_email
+    - field.field.node.purchaser_supplier.field_contact_phone
+    - field.field.node.purchaser_supplier.field_production_facilities_city
+    - field.field.node.purchaser_supplier.field_supplier_production_state
+    - node.type.purchaser_supplier
+  module:
+    - text
+    - user
+id: node.purchaser_supplier.default
+targetEntityType: node
+bundle: purchaser_supplier
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_company_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_email:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contact_phone:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_production_facilities_city:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_supplier_production_state:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

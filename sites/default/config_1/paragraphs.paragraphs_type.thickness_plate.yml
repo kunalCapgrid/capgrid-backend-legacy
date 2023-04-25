@@ -1,0 +1,9 @@
+uuid: 1f377fb0-fba8-4a13-a23c-50505e2d2279
+langcode: en
+status: true
+dependencies: {  }
+id: thickness_plate
+label: 'Thickness Plate'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,41 @@
+uuid: f33f4edf-fde8-410b-9926-6ff3d9d43e91
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.purchaser_supplier.body
+    - field.field.node.purchaser_supplier.field_company_name
+    - field.field.node.purchaser_supplier.field_contact_email
+    - field.field.node.purchaser_supplier.field_contact_phone
+    - field.field.node.purchaser_supplier.field_production_facilities_city
+    - field.field.node.purchaser_supplier.field_supplier_production_state
+    - node.type.purchaser_supplier
+  module:
+    - text
+    - user
+id: node.purchaser_supplier.teaser
+targetEntityType: node
+bundle: purchaser_supplier
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_company_name: true
+  field_contact_email: true
+  field_contact_phone: true
+  field_production_facilities_city: true
+  field_supplier_production_state: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: bd5f4444-5b6c-4a34-ba61-346ef3fc7b29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_preference
+  module:
+    - user
+id: user.user.field_preference
+field_name: field_preference
+entity_type: user
+bundle: user
+label: Preference
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[{"id":1,"name":"Product Price"},{"id":2,"name":"Delivery Compliance"},{"id":3,"name":"Lead Time"},{"id":4,"name":"Quality"},{"id":5,"name":"Logistics Cost"}]'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,9 @@
+uuid: 57f5241a-e640-43e9-80fa-4d80f89ec5ff
+langcode: en
+status: true
+dependencies: {  }
+id: casting_capabilities
+label: 'Casting Capabilities'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

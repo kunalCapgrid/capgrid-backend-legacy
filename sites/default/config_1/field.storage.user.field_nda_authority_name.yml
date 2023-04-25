@@ -1,0 +1,21 @@
+uuid: 1d97c0a9-eaaf-4845-809e-d3a520d07ced
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_nda_authority_name
+field_name: field_nda_authority_name
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

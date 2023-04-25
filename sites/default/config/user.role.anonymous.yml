@@ -1,0 +1,21 @@
+uuid: 223c467d-ec80-4502-b5ed-f392e4b882c3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'create article content'
+  - 'create page content'
+  - 'create purchaser_requirements content'
+  - 'create supplier_details content'
+  - 'restful post user_registration'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'

@@ -1,0 +1,19 @@
+uuid: 8998164d-72b9-4937-b581-407d09d696cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tolerance_grade
+    - paragraphs.paragraphs_type.welding_capability
+id: paragraph.welding_capability.field_tolerance_grade
+field_name: field_tolerance_grade
+entity_type: paragraph
+bundle: welding_capability
+label: 'Tolerance Grade'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

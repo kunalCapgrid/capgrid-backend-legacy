@@ -1,0 +1,352 @@
+uuid: af1f863d-c783-415c-b9a7-b3a78c40f50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.supplier_details.body
+    - field.field.node.supplier_details.field_assembly_capability
+    - field.field.node.supplier_details.field_bending_capability
+    - field.field.node.supplier_details.field_business_segment
+    - field.field.node.supplier_details.field_company_incorporated
+    - field.field.node.supplier_details.field_company_name
+    - field.field.node.supplier_details.field_contact_email
+    - field.field.node.supplier_details.field_contact_name
+    - field.field.node.supplier_details.field_contact_phone
+    - field.field.node.supplier_details.field_cutting_capability
+    - field.field.node.supplier_details.field_design_and_development_cap
+    - field.field.node.supplier_details.field_export_auto_parts
+    - field.field.node.supplier_details.field_export_countries_name
+    - field.field.node.supplier_details.field_forging_capabilities
+    - field.field.node.supplier_details.field_headquarters_address
+    - field.field.node.supplier_details.field_heat_treatment_capability
+    - field.field.node.supplier_details.field_house_tooling_capabilities
+    - field.field.node.supplier_details.field_machining_capability
+    - field.field.node.supplier_details.field_major_production
+    - field.field.node.supplier_details.field_materials_handle
+    - field.field.node.supplier_details.field_moulding_capability
+    - field.field.node.supplier_details.field_painting_capability
+    - field.field.node.supplier_details.field_part_category_service
+    - field.field.node.supplier_details.field_production_facilities_city
+    - field.field.node.supplier_details.field_qu
+    - field.field.node.supplier_details.field_quality_certification
+    - field.field.node.supplier_details.field_specific_sub_segment
+    - field.field.node.supplier_details.field_supplier_annual_turnover
+    - field.field.node.supplier_details.field_supplier_production_state
+    - field.field.node.supplier_details.field_testing_facility
+    - field.field.node.supplier_details.field_thickness_metal_plate
+    - field.field.node.supplier_details.field_tier_2_and_tier_3_supplier
+    - field.field.node.supplier_details.field_type_of_casting_capability
+    - field.field.node.supplier_details.field_types_of_materials
+    - field.field.node.supplier_details.field_welding_capability
+    - node.type.supplier_details
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+    - user
+id: node.supplier_details.default
+targetEntityType: node
+bundle: supplier_details
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_assembly_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 128
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_bending_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 126
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_business_segment:
+    type: entity_reference_revisions_entity_view
+    weight: 115
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_company_incorporated:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_company_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_email:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contact_name:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_phone:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cutting_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 125
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_design_and_development_cap:
+    type: entity_reference_revisions_entity_view
+    weight: 136
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_export_auto_parts:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_export_countries_name:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forging_capabilities:
+    type: entity_reference_revisions_entity_view
+    weight: 123
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_headquarters_address:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_heat_treatment_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 131
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_house_tooling_capabilities:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_machining_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 124
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_major_production:
+    type: entity_reference_revisions_entity_view
+    weight: 118
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_materials_handle:
+    type: entity_reference_revisions_entity_view
+    weight: 119
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_moulding_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 132
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_painting_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 130
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_part_category_service:
+    type: entity_reference_revisions_entity_view
+    weight: 117
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_production_facilities_city:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_qu:
+    weight: 133
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_quality_certification:
+    type: entity_reference_revisions_entity_view
+    weight: 134
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_specific_sub_segment:
+    type: entity_reference_revisions_entity_view
+    weight: 116
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_supplier_annual_turnover:
+    weight: 137
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_supplier_production_state:
+    weight: 138
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_testing_facility:
+    type: entity_reference_revisions_entity_view
+    weight: 135
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_thickness_metal_plate:
+    type: entity_reference_revisions_entity_view
+    weight: 120
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tier_2_and_tier_3_supplier:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_type_of_casting_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 122
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_types_of_materials:
+    type: entity_reference_revisions_entity_view
+    weight: 121
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_welding_capability:
+    type: entity_reference_revisions_entity_view
+    weight: 127
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

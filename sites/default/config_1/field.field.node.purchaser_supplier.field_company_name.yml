@@ -1,0 +1,19 @@
+uuid: e0e4bced-4d0d-45f3-96d6-f487cc7e13a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_name
+    - node.type.purchaser_supplier
+id: node.purchaser_supplier.field_company_name
+field_name: field_company_name
+entity_type: node
+bundle: purchaser_supplier
+label: 'Company Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

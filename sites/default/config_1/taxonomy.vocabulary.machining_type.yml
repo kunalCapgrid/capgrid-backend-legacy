@@ -1,0 +1,8 @@
+uuid: 9891c106-aa0a-4eca-aedb-699253c469d4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Machining Type'
+vid: machining_type
+description: ''
+weight: 0

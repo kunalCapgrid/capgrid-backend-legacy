@@ -1,0 +1,8 @@
+uuid: 3b0fe31f-03e7-4518-be2d-805e9fa423cd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Heat Treatment Type'
+vid: heat_treatment_type
+description: ''
+weight: 0

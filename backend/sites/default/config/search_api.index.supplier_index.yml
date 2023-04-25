@@ -1,0 +1,538 @@
+uuid: 24e6cfae-b408-44af-b3f5-85ed1f550946
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assembly_capability
+    - field.storage.paragraph.field_assembly_type
+    - field.storage.paragraph.field_production_capacity
+    - field.storage.node.field_bending_capability
+    - field.storage.paragraph.field_bend_type
+    - field.storage.node.field_company_name
+    - field.storage.node.field_cutting_capability
+    - field.storage.paragraph.field_cut_type
+    - field.storage.node.field_design_and_development_cap
+    - field.storage.paragraph.field_design_and_development_typ
+    - field.storage.node.field_forging_capabilities
+    - field.storage.paragraph.field_forging_type
+    - field.storage.paragraph.field_maximum_weight
+    - field.storage.paragraph.field_minimum_weight
+    - field.storage.node.field_heat_treatment_capability
+    - field.storage.paragraph.field_heat_treatment_type
+    - field.storage.node.field_machining_capability
+    - field.storage.paragraph.field_machining_type
+    - field.storage.node.field_moulding_capability
+    - field.storage.paragraph.field_moulding_type
+    - field.storage.node.field_painting_capability
+    - field.storage.paragraph.field_paint_type
+    - field.storage.node.field_production_facilities_city
+    - field.storage.node.field_quality_certification
+    - field.storage.paragraph.field_certification_details
+    - field.storage.paragraph.field_certification_type
+    - field.storage.node.field_supplier_annual_turnover
+    - field.storage.node.field_supplier_production_state
+    - field.storage.node.field_welding_capability
+    - field.storage.paragraph.field_welding_type
+    - field.storage.node.field_major_production
+    - field.storage.paragraph.field_production_capabilities
+    - field.storage.node.field_thickness_metal_plate
+    - field.storage.paragraph.field_thickness
+    - field.storage.node.field_type_of_casting_capability
+    - field.storage.paragraph.field_casting_type
+    - field.storage.node.field_materials_handle
+    - field.storage.paragraph.field_grades_types
+    - field.storage.paragraph.field_material
+    - field.storage.node.field_types_of_materials
+    - field.storage.node.field_business_segment
+    - field.storage.paragraph.field_key_clients_segment
+    - field.storage.paragraph.field_vehicles
+    - field.storage.node.field_part_category_service
+    - field.storage.paragraph.field_list_of_parts
+    - field.storage.paragraph.field_parts_category
+    - search_api.server.elasticsearch_server
+  module:
+    - paragraphs
+    - taxonomy
+    - node
+    - search_api
+id: supplier_index
+name: 'Supplier Index'
+description: ''
+read_only: false
+field_settings:
+  assembly_production_capacity:
+    label: 'Assembly Capability » Paragraph » Production Capacity'
+    datasource_id: 'entity:node'
+    property_path: 'field_assembly_capability:entity:field_production_capacity'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_assembly_capability
+        - field.storage.paragraph.field_production_capacity
+      module:
+        - paragraphs
+  assembly_type:
+    label: 'Assembly Capability » Paragraph » Assembly Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_assembly_capability:entity:field_assembly_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_assembly_capability
+        - field.storage.paragraph.field_assembly_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  bend_type:
+    label: 'Bending Capability » Paragraph » Bend Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_bending_capability:entity:field_bend_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bending_capability
+        - field.storage.paragraph.field_bend_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  casting_maximum_weight:
+    label: 'What type of casting capabilities do you have » Paragraph » Maximum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_type_of_casting_capability:entity:field_maximum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type_of_casting_capability
+        - field.storage.paragraph.field_maximum_weight
+      module:
+        - paragraphs
+  casting_minimum_weight:
+    label: 'What type of casting capabilities do you have » Paragraph » Minimum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_type_of_casting_capability:entity:field_minimum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type_of_casting_capability
+        - field.storage.paragraph.field_minimum_weight
+      module:
+        - paragraphs
+  casting_type:
+    label: 'What type of casting capabilities do you have » Paragraph » Casting Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_type_of_casting_capability:entity:field_casting_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_type_of_casting_capability
+        - field.storage.paragraph.field_casting_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  certification_details:
+    label: 'Quality Certification » Paragraph » Certification Details'
+    datasource_id: 'entity:node'
+    property_path: 'field_quality_certification:entity:field_certification_details'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_quality_certification
+        - field.storage.paragraph.field_certification_details
+      module:
+        - paragraphs
+  certification_type:
+    label: 'Quality Certification » Paragraph » Certification Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_quality_certification:entity:field_certification_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_quality_certification
+        - field.storage.paragraph.field_certification_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  client_names:
+    label: 'Which business segment does your company service » Paragraph » Key Clients'
+    datasource_id: 'entity:node'
+    property_path: 'field_business_segment:entity:field_key_clients_segment'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_business_segment
+        - field.storage.paragraph.field_key_clients_segment
+      module:
+        - paragraphs
+  company_name:
+    label: 'Company Name'
+    datasource_id: 'entity:node'
+    property_path: field_company_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_company_name
+  cutting_type:
+    label: 'Cutting Capability » Paragraph » Cut Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_cutting_capability:entity:field_cut_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_cutting_capability
+        - field.storage.paragraph.field_cut_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  design_dev_type:
+    label: 'Design and Development Capability » Paragraph » Design and Development Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_design_and_development_cap:entity:field_design_and_development_typ:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_design_and_development_cap
+        - field.storage.paragraph.field_design_and_development_typ
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  field_part_category_service:
+    label: 'Which part category do you service'
+    datasource_id: 'entity:node'
+    property_path: field_part_category_service
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_part_category_service
+  forging_maximum_weight:
+    label: 'Forging Capabilities » Paragraph » Maximum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_forging_capabilities:entity:field_maximum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forging_capabilities
+        - field.storage.paragraph.field_maximum_weight
+      module:
+        - paragraphs
+  forging_minimum_weight:
+    label: 'Forging Capabilities » Paragraph » Minimum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_forging_capabilities:entity:field_minimum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forging_capabilities
+        - field.storage.paragraph.field_minimum_weight
+      module:
+        - paragraphs
+  forging_type:
+    label: 'Forging Capabilities » Paragraph » Forging Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_forging_capabilities:entity:field_forging_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forging_capabilities
+        - field.storage.paragraph.field_forging_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  heat_treatment_maximum_weight:
+    label: 'Heat Treatment Capability » Paragraph » Maximum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_heat_treatment_capability:entity:field_maximum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_heat_treatment_capability
+        - field.storage.paragraph.field_maximum_weight
+      module:
+        - paragraphs
+  heat_treatment_type:
+    label: 'Heat Treatment Capability » Paragraph » Heat Treatment Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_heat_treatment_capability:entity:field_heat_treatment_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_heat_treatment_capability
+        - field.storage.paragraph.field_heat_treatment_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  machining_maximum_weight:
+    label: 'Machining Capability » Paragraph » Maximum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_machining_capability:entity:field_maximum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_machining_capability
+        - field.storage.paragraph.field_maximum_weight
+      module:
+        - paragraphs
+  machining_type:
+    label: 'Machining Capability » Paragraph » Machining Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_machining_capability:entity:field_machining_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_machining_capability
+        - field.storage.paragraph.field_machining_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  material_grade_types:
+    label: 'What types of materials can you handle » Paragraph » Grades/Types'
+    datasource_id: 'entity:node'
+    property_path: 'field_materials_handle:entity:field_grades_types'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_materials_handle
+        - field.storage.paragraph.field_grades_types
+      module:
+        - paragraphs
+  material_maximum_weight:
+    label: 'What types of materials can you handle » Paragraph » Maximum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_types_of_materials:entity:field_maximum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_types_of_materials
+        - field.storage.paragraph.field_maximum_weight
+      module:
+        - paragraphs
+  material_minimum_weight:
+    label: 'What types of materials can you handle » Paragraph » Minimum Weight'
+    datasource_id: 'entity:node'
+    property_path: 'field_types_of_materials:entity:field_minimum_weight'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_types_of_materials
+        - field.storage.paragraph.field_minimum_weight
+      module:
+        - paragraphs
+  material_type:
+    label: 'What types of materials can you handle » Paragraph » Material » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_materials_handle:entity:field_material:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_materials_handle
+        - field.storage.paragraph.field_material
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  material_type_1:
+    label: 'What types of materials can you handle » Paragraph » Material » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_types_of_materials:entity:field_material:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_types_of_materials
+        - field.storage.paragraph.field_material
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  metal_thickness:
+    label: 'What is the maximum thickness of the metal plate that you handle » Paragraph » Thickness » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_thickness_metal_plate:entity:field_thickness:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_thickness_metal_plate
+        - field.storage.paragraph.field_thickness
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  moulding_type:
+    label: 'Moulding Capability » Paragraph » Moulding Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_moulding_capability:entity:field_moulding_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_moulding_capability
+        - field.storage.paragraph.field_moulding_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  paint_type:
+    label: 'Painting Capability » Paragraph » Paint Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_painting_capability:entity:field_paint_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_painting_capability
+        - field.storage.paragraph.field_paint_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  part_category_details:
+    label: 'Which part category do you service » Paragraph » List of Parts'
+    datasource_id: 'entity:node'
+    property_path: 'field_part_category_service:entity:field_list_of_parts'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_part_category_service
+        - field.storage.paragraph.field_list_of_parts
+      module:
+        - paragraphs
+  part_category_name:
+    label: 'Which part category do you service » Paragraph » Parts Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_part_category_service:entity:field_parts_category:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_part_category_service
+        - field.storage.paragraph.field_parts_category
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  production_capability:
+    label: 'What are your major production capabilities » Paragraph » Production Capabilities » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_major_production:entity:field_production_capabilities:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_major_production
+        - field.storage.paragraph.field_production_capabilities
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  production_city:
+    label: 'Production Facilities City'
+    datasource_id: 'entity:node'
+    property_path: field_production_facilities_city
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_production_facilities_city
+  supplier_annual_turnover:
+    label: 'Supplier Annual Turnover » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_supplier_annual_turnover:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_supplier_annual_turnover
+      module:
+        - taxonomy
+        - taxonomy
+  supplier_production_state:
+    label: 'Supplier Production State » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_supplier_production_state:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_supplier_production_state
+      module:
+        - taxonomy
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  uuid:
+    label: UUID
+    datasource_id: 'entity:node'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - node
+  vehicles_type:
+    label: 'Which business segment does your company service » Paragraph » Vehicles » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_business_segment:entity:field_vehicles:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_business_segment
+        - field.storage.paragraph.field_vehicles
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  vid:
+    label: 'Revision ID'
+    datasource_id: 'entity:node'
+    property_path: vid
+    type: integer
+    dependencies:
+      module:
+        - node
+  welding_type:
+    label: 'Welding Capability » Paragraph » Welding Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_welding_capability:entity:field_welding_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_welding_capability
+        - field.storage.paragraph.field_welding_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - supplier_details
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: elasticsearch_server

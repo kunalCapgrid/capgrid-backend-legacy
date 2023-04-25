@@ -1,0 +1,29 @@
+uuid: 82c6a186-39bc-4175-826c-0137d86e6e47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_design_and_development_typ
+    - paragraphs.paragraphs_type.design_and_development_capabilit
+    - taxonomy.vocabulary.design_and_development_type
+id: paragraph.design_and_development_capabilit.field_design_and_development_typ
+field_name: field_design_and_development_typ
+entity_type: paragraph
+bundle: design_and_development_capabilit
+label: 'Design and Development Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      design_and_development_type: design_and_development_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 96e68204-65a6-4ed0-b74f-9dfb81d9b2f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.casting_capabilities
+id: paragraph.casting_capabilities.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: casting_capabilities
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

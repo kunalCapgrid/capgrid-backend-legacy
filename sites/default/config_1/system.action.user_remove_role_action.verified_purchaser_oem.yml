@@ -1,0 +1,14 @@
+uuid: 95baf471-3268-4be2-b3b9-3663a47bd925
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.verified_purchaser_oem
+  module:
+    - user
+id: user_remove_role_action.verified_purchaser_oem
+label: 'Remove the Verified Purchaser (OEM) role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: verified_purchaser_oem

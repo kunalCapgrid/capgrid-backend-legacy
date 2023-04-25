@@ -1,0 +1,19 @@
+uuid: ffb7e268-b567-4a8a-b508-b5d0367ae79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purchase_part_description
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_purchase_part_description
+field_name: field_purchase_part_description
+entity_type: node
+bundle: purchaser_requirements
+label: 'Part Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

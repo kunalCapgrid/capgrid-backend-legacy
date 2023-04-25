@@ -1,0 +1,28 @@
+uuid: f74e8586-b67b-4e52-a9f2-e4716f89fe2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requisition_ref
+    - node.type.purchaser_requirements
+    - node.type.should_cost
+id: node.should_cost.field_requisition_ref
+field_name: field_requisition_ref
+entity_type: node
+bundle: should_cost
+label: 'Requisition Ref'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      purchaser_requirements: purchaser_requirements
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

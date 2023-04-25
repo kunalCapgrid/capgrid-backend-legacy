@@ -1,0 +1,9 @@
+uuid: 11c7866e-0ca2-4d96-b65a-c03ff33575d5
+langcode: en
+status: true
+dependencies: {  }
+id: requirement_response
+label: 'Requirement Response'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

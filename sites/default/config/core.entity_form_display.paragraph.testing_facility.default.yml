@@ -1,0 +1,43 @@
+uuid: a5c120cd-4420-4ec6-a171-6128c271f3bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testing_facility.field_in_house
+    - field.field.paragraph.testing_facility.field_outsourced
+    - field.field.paragraph.testing_facility.field_testing_type
+    - paragraphs.paragraphs_type.testing_facility
+id: paragraph.testing_facility.default
+targetEntityType: paragraph
+bundle: testing_facility
+mode: default
+content:
+  field_in_house:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_outsourced:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_testing_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

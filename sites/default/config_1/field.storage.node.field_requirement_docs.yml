@@ -1,0 +1,20 @@
+uuid: 13fd21b3-fda7-49b5-a4ef-e2559c9a117d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_requirement_docs
+field_name: field_requirement_docs
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

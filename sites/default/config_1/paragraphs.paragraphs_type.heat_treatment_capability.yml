@@ -1,0 +1,9 @@
+uuid: f35d3809-f414-40a8-bfd0-66fff7ce91e0
+langcode: en
+status: true
+dependencies: {  }
+id: heat_treatment_capability
+label: 'Heat Treatment Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

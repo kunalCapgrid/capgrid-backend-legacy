@@ -1,0 +1,19 @@
+uuid: c304e9a7-27e8-475f-bf4c-6870ca862dfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - jwt
+    - serialization
+    - user
+id: user_registration
+plugin_id: user_registration
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - jwt_auth
+    - cookie

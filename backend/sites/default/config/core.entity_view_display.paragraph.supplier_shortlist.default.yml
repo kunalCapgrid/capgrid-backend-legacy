@@ -1,0 +1,85 @@
+uuid: 0debb701-59a1-4703-986a-47b64d8e5055
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supplier_shortlist.field_invite_rfq
+    - field.field.paragraph.supplier_shortlist.field_nda_document
+    - field.field.paragraph.supplier_shortlist.field_priority
+    - field.field.paragraph.supplier_shortlist.field_request_nda
+    - field.field.paragraph.supplier_shortlist.field_requirement_questionnaire
+    - field.field.paragraph.supplier_shortlist.field_supplier
+    - field.field.paragraph.supplier_shortlist.field_supplier_docs
+    - paragraphs.paragraphs_type.supplier_shortlist
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.supplier_shortlist.default
+targetEntityType: paragraph
+bundle: supplier_shortlist
+mode: default
+content:
+  field_invite_rfq:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_nda_document:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_priority:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_request_nda:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_requirement_questionnaire:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_supplier:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_supplier_docs:
+    type: entity_reference_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

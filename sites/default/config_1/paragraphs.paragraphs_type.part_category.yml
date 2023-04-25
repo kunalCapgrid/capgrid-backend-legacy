@@ -1,0 +1,9 @@
+uuid: 6ec979c8-3770-482f-9fef-77af8937e204
+langcode: en
+status: true
+dependencies: {  }
+id: part_category
+label: 'Part Category'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

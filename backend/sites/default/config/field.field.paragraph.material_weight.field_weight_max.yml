@@ -1,0 +1,19 @@
+uuid: 82151667-80c4-4c8b-b99e-9a98963bd2ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_weight_max
+    - paragraphs.paragraphs_type.material_weight
+id: paragraph.material_weight.field_weight_max
+field_name: field_weight_max
+entity_type: paragraph
+bundle: material_weight
+label: 'Weight Max'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

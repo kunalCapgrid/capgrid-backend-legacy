@@ -1,0 +1,19 @@
+uuid: 1bcd77fb-f3b1-4f51-9e95-5905b0c1c5a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vehicles_segment
+    - paragraphs.paragraphs_type.specific_sub_segment
+id: paragraph.specific_sub_segment.field_vehicles_segment
+field_name: field_vehicles_segment
+entity_type: paragraph
+bundle: specific_sub_segment
+label: 'Vehicles Segment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: e267f346-1ad3-4e8e-9516-3ce987c6747b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_list_of_parts
+field_name: field_list_of_parts
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

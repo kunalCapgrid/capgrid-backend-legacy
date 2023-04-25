@@ -1,0 +1,42 @@
+body{
+    width: 80%;
+}
+.left-footer-content {
+    width: 50%;
+    float: left;
+}
+.right-footer-content {
+    width: 50%;
+    float: right;
+}
+.pdf-title {
+    text-align: center;
+}
+.title-bold {
+    margin-left: 100px;
+}
+.pdf-second-title {
+    font-weight: bold;
+    font-size: 9px;
+}
+.footer-wrapper  {
+    position: relative;
+}
+.day-of-date {
+    width: 100px;
+    text-align: center;
+}
+.pdf-body {
+    text-align: justify !important;
+    text-indent: 75px;
+}
+.company-name {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.pdf-second-para {
+    margin-left: 100px !important;
+}
+.pdf-body p{
+    text-align: justify !important;
+}

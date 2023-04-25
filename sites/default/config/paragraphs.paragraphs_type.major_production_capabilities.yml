@@ -1,0 +1,9 @@
+uuid: 1740104d-7fd9-4432-a4ad-3767012d0583
+langcode: en
+status: true
+dependencies: {  }
+id: major_production_capabilities
+label: 'Major production capabilities'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

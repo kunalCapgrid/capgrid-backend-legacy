@@ -1,0 +1,8 @@
+uuid: 6a8f78e9-884a-4079-82da-2c7fb48f32d7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Welding Type'
+vid: welding_type
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 09375d60-e906-4615-8ba2-e7a9be94573b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_longlist_suppliers_count
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_longlist_suppliers_count
+field_name: field_longlist_suppliers_count
+entity_type: node
+bundle: purchaser_requirements
+label: 'Longlist Suppliers Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

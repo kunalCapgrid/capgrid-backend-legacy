@@ -1,0 +1,23 @@
+uuid: 87e13ecc-ce60-43d7-af44-432c439f70d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_profile_type
+  module:
+    - options
+    - user
+id: user.user.field_profile_type
+field_name: field_profile_type
+entity_type: user
+bundle: user
+label: 'Profile Type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: supplier
+default_value_callback: ''
+settings: {  }
+field_type: list_string

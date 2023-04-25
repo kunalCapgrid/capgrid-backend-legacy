@@ -1,0 +1,21 @@
+uuid: 4a39e1ca-bf6c-4cdf-8a8b-a5300a4ddd34
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_longlist_suppliers_count
+field_name: field_longlist_suppliers_count
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

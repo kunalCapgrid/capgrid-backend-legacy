@@ -1,0 +1,24 @@
+uuid: 81612a63-5ebe-4316-9f46-59c101e8825c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_create_from_website
+  module:
+    - user
+id: user.user.field_create_from_website
+field_name: field_create_from_website
+entity_type: user
+bundle: user
+label: 'Create From Website'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

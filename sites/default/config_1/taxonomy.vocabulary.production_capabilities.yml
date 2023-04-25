@@ -1,0 +1,8 @@
+uuid: 711e1f00-41ff-49b7-a34f-7757b16144c6
+langcode: en
+status: true
+dependencies: {  }
+name: 'production capabilities'
+vid: production_capabilities
+description: ''
+weight: 0

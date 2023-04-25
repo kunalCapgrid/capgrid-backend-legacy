@@ -1,0 +1,19 @@
+uuid: b431d3b9-7135-4975-a281-e18700e308b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demand_name
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_demand_name
+field_name: field_demand_name
+entity_type: node
+bundle: purchaser_requirements
+label: 'Demand Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

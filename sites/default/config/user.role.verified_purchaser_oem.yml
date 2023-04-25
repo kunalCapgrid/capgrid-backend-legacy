@@ -1,0 +1,9 @@
+uuid: d980aac6-92a8-446b-9c25-f9e3caf52fee
+langcode: en
+status: true
+dependencies: {  }
+id: verified_purchaser_oem
+label: 'Verified Purchaser (OEM)'
+weight: 5
+is_admin: null
+permissions: {  }

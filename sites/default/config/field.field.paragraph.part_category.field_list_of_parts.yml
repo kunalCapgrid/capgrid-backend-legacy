@@ -1,0 +1,19 @@
+uuid: 0d6e0b82-2b54-4436-a950-27693caffd77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_of_parts
+    - paragraphs.paragraphs_type.part_category
+id: paragraph.part_category.field_list_of_parts
+field_name: field_list_of_parts
+entity_type: paragraph
+bundle: part_category
+label: 'List of Parts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

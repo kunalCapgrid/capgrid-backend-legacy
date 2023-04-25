@@ -1,0 +1,8 @@
+uuid: 4e4816ca-1956-4015-85c5-7ea2216a2bba
+langcode: en
+status: true
+dependencies: {  }
+name: 'Forging Capability'
+vid: forging_capability
+description: ''
+weight: 0

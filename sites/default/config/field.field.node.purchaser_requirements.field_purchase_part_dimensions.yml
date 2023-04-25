@@ -1,0 +1,19 @@
+uuid: bf3e8eff-4af1-49d1-82be-523c61bc7356
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purchase_part_dimensions
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_purchase_part_dimensions
+field_name: field_purchase_part_dimensions
+entity_type: node
+bundle: purchaser_requirements
+label: 'Part Dimensions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

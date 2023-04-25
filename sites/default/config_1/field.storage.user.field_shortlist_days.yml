@@ -1,0 +1,20 @@
+uuid: 90ddccf9-9ed9-427a-a53b-91a262b31733
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_shortlist_days
+field_name: field_shortlist_days
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

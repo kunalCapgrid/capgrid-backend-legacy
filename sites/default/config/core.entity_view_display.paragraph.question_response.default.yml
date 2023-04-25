@@ -1,0 +1,30 @@
+uuid: 44a897de-f13e-404f-8816-9b62ea4c4a85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.question_response.field_message_body
+    - field.field.paragraph.question_response.field_message_owner
+    - paragraphs.paragraphs_type.question_response
+id: paragraph.question_response.default
+targetEntityType: paragraph
+bundle: question_response
+mode: default
+content:
+  field_message_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_message_owner:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

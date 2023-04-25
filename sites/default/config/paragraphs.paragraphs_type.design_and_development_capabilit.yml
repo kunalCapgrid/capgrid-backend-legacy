@@ -1,0 +1,9 @@
+uuid: 4608169d-fe68-4198-b123-1e7caf4fe91f
+langcode: en
+status: true
+dependencies: {  }
+id: design_and_development_capabilit
+label: 'Design and Development Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: 45c1dcb8-ff1d-4c55-ad5f-e3003b520439
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rfq_details
+field_name: field_rfq_details
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: b8074d94-28d4-4750-a041-d0df672ad2e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_docusign_envelope_id
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_docusign_envelope_id
+field_name: field_docusign_envelope_id
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Docusign Envelope ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,85 @@
+uuid: e9b85e9d-96c3-442c-9545-aba6e2df9e91
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.purchaser_requirements.body
+    - field.field.node.purchaser_requirements.field_annual_turnover
+    - field.field.node.purchaser_requirements.field_annual_volume
+    - field.field.node.purchaser_requirements.field_batch_size
+    - field.field.node.purchaser_requirements.field_create_from_cart
+    - field.field.node.purchaser_requirements.field_demand_name
+    - field.field.node.purchaser_requirements.field_final_bid_received_date
+    - field.field.node.purchaser_requirements.field_first_bid_received_date
+    - field.field.node.purchaser_requirements.field_longlist_nodes
+    - field.field.node.purchaser_requirements.field_longlist_suppliers_count
+    - field.field.node.purchaser_requirements.field_purchase_part_description
+    - field.field.node.purchaser_requirements.field_purchase_part_dimensions
+    - field.field.node.purchaser_requirements.field_purchase_part_material
+    - field.field.node.purchaser_requirements.field_purchase_part_speci
+    - field.field.node.purchaser_requirements.field_purchase_part_weight
+    - field.field.node.purchaser_requirements.field_purchase_process_require
+    - field.field.node.purchaser_requirements.field_purchase_supplier_region
+    - field.field.node.purchaser_requirements.field_quantity_certification
+    - field.field.node.purchaser_requirements.field_requirement_docs
+    - field.field.node.purchaser_requirements.field_rfp_id
+    - field.field.node.purchaser_requirements.field_rfq_details
+    - field.field.node.purchaser_requirements.field_rfq_due_date
+    - field.field.node.purchaser_requirements.field_rfq_initation_date
+    - field.field.node.purchaser_requirements.field_rfq_prep_start_date
+    - field.field.node.purchaser_requirements.field_selected_supplier
+    - field.field.node.purchaser_requirements.field_shortlist_start_date
+    - field.field.node.purchaser_requirements.field_shortlist_suppliers
+    - field.field.node.purchaser_requirements.field_status
+    - node.type.purchaser_requirements
+  module:
+    - text
+    - user
+id: node.purchaser_requirements.teaser
+targetEntityType: node
+bundle: purchaser_requirements
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_annual_turnover: true
+  field_annual_volume: true
+  field_batch_size: true
+  field_create_from_cart: true
+  field_demand_name: true
+  field_final_bid_received_date: true
+  field_first_bid_received_date: true
+  field_longlist_nodes: true
+  field_longlist_suppliers_count: true
+  field_purchase_part_description: true
+  field_purchase_part_dimensions: true
+  field_purchase_part_material: true
+  field_purchase_part_speci: true
+  field_purchase_part_weight: true
+  field_purchase_process_require: true
+  field_purchase_supplier_region: true
+  field_quantity_certification: true
+  field_requirement_docs: true
+  field_rfp_id: true
+  field_rfq_details: true
+  field_rfq_due_date: true
+  field_rfq_initation_date: true
+  field_rfq_prep_start_date: true
+  field_selected_supplier: true
+  field_shortlist_start_date: true
+  field_shortlist_suppliers: true
+  field_status: true
+  search_api_excerpt: true

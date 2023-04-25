@@ -1,0 +1,8 @@
+uuid: 62317239-1b31-4567-841e-b4de63db7998
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cutting Type'
+vid: cutting_type
+description: ''
+weight: 0

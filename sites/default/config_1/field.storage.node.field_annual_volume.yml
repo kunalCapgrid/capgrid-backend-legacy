@@ -1,0 +1,20 @@
+uuid: 1a8ce0d7-cca8-46e5-86cd-7e41f4cfb463
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_annual_volume
+field_name: field_annual_volume
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

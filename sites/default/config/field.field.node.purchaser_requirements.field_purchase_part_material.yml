@@ -1,0 +1,19 @@
+uuid: b65b0eb4-fcca-4254-939e-53d3c5317336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purchase_part_material
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_purchase_part_material
+field_name: field_purchase_part_material
+entity_type: node
+bundle: purchaser_requirements
+label: 'Part Material'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

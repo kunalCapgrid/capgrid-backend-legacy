@@ -1,0 +1,21 @@
+uuid: 42bb45ef-bbad-41c4-9eb6-f6cfa74d1c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rfq_initation_date
+    - node.type.purchaser_requirements
+  module:
+    - datetime
+id: node.purchaser_requirements.field_rfq_initation_date
+field_name: field_rfq_initation_date
+entity_type: node
+bundle: purchaser_requirements
+label: 'RFQ Initation Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

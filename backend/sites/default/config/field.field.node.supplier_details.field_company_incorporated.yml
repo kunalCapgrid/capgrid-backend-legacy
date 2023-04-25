@@ -1,0 +1,19 @@
+uuid: 6be84856-b792-4ebe-afaa-0c86cf8ecaa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_incorporated
+    - node.type.supplier_details
+id: node.supplier_details.field_company_incorporated
+field_name: field_company_incorporated
+entity_type: node
+bundle: supplier_details
+label: 'Company Incorporated'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

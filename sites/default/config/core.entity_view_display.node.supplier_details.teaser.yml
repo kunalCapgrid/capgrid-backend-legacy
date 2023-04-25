@@ -1,0 +1,107 @@
+uuid: a38e710a-001d-4e03-a36c-d80593e3867d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.supplier_details.body
+    - field.field.node.supplier_details.field_assembly_capability
+    - field.field.node.supplier_details.field_bending_capability
+    - field.field.node.supplier_details.field_business_segment
+    - field.field.node.supplier_details.field_company_incorporated
+    - field.field.node.supplier_details.field_company_name
+    - field.field.node.supplier_details.field_contact_email
+    - field.field.node.supplier_details.field_contact_name
+    - field.field.node.supplier_details.field_contact_phone
+    - field.field.node.supplier_details.field_customer_strength
+    - field.field.node.supplier_details.field_cutting_capability
+    - field.field.node.supplier_details.field_design_and_development_cap
+    - field.field.node.supplier_details.field_export_auto_parts
+    - field.field.node.supplier_details.field_export_countries_name
+    - field.field.node.supplier_details.field_export_rating
+    - field.field.node.supplier_details.field_financial_strength
+    - field.field.node.supplier_details.field_forging_capabilities
+    - field.field.node.supplier_details.field_headquarters_address
+    - field.field.node.supplier_details.field_heat_treatment_capability
+    - field.field.node.supplier_details.field_house_tooling_capabilities
+    - field.field.node.supplier_details.field_machining_capability
+    - field.field.node.supplier_details.field_major_production
+    - field.field.node.supplier_details.field_materials_handle
+    - field.field.node.supplier_details.field_moulding_capability
+    - field.field.node.supplier_details.field_painting_capability
+    - field.field.node.supplier_details.field_part_category_service
+    - field.field.node.supplier_details.field_product_diversification_sc
+    - field.field.node.supplier_details.field_production_facilities_city
+    - field.field.node.supplier_details.field_qu
+    - field.field.node.supplier_details.field_quality_certification
+    - field.field.node.supplier_details.field_specific_sub_segment
+    - field.field.node.supplier_details.field_supplier_annual_turnover
+    - field.field.node.supplier_details.field_supplier_production_state
+    - field.field.node.supplier_details.field_testing_facility
+    - field.field.node.supplier_details.field_thickness_metal_plate
+    - field.field.node.supplier_details.field_tier_2_and_tier_3_supplier
+    - field.field.node.supplier_details.field_type_of_casting_capability
+    - field.field.node.supplier_details.field_types_of_materials
+    - field.field.node.supplier_details.field_welding_capability
+    - node.type.supplier_details
+  module:
+    - text
+    - user
+id: node.supplier_details.teaser
+targetEntityType: node
+bundle: supplier_details
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_assembly_capability: true
+  field_bending_capability: true
+  field_business_segment: true
+  field_company_incorporated: true
+  field_company_name: true
+  field_contact_email: true
+  field_contact_name: true
+  field_contact_phone: true
+  field_customer_strength: true
+  field_cutting_capability: true
+  field_design_and_development_cap: true
+  field_export_auto_parts: true
+  field_export_countries_name: true
+  field_export_rating: true
+  field_financial_strength: true
+  field_forging_capabilities: true
+  field_headquarters_address: true
+  field_heat_treatment_capability: true
+  field_house_tooling_capabilities: true
+  field_machining_capability: true
+  field_major_production: true
+  field_materials_handle: true
+  field_moulding_capability: true
+  field_painting_capability: true
+  field_part_category_service: true
+  field_product_diversification_sc: true
+  field_production_facilities_city: true
+  field_qu: true
+  field_quality_certification: true
+  field_specific_sub_segment: true
+  field_supplier_annual_turnover: true
+  field_supplier_production_state: true
+  field_testing_facility: true
+  field_thickness_metal_plate: true
+  field_tier_2_and_tier_3_supplier: true
+  field_type_of_casting_capability: true
+  field_types_of_materials: true
+  field_welding_capability: true
+  search_api_excerpt: true

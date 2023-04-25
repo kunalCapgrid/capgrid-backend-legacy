@@ -1,0 +1,19 @@
+uuid: 9e8f8745-507b-4939-8b69-1ed36ac9da00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_weight_max
+    - paragraphs.paragraphs_type.forging_capabilities
+id: paragraph.forging_capabilities.field_weight_max
+field_name: field_weight_max
+entity_type: paragraph
+bundle: forging_capabilities
+label: 'Weight Max'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

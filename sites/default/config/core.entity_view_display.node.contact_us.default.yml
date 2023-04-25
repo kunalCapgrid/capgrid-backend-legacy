@@ -1,0 +1,64 @@
+uuid: 9bf013bc-fa68-49b2-948c-8664c1b9bd3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_us.body
+    - field.field.node.contact_us.field_email
+    - field.field.node.contact_us.field_name
+    - field.field.node.contact_us.field_phone_number
+    - field.field.node.contact_us.field_subject
+    - node.type.contact_us
+  module:
+    - text
+    - user
+id: node.contact_us.default
+targetEntityType: node
+bundle: contact_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_number:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subject:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: ed984ff9-63ab-4a86-bdef-7181040bf752
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nda_authority_designation
+  module:
+    - user
+id: user.user.field_nda_authority_designation
+field_name: field_nda_authority_designation
+entity_type: user
+bundle: user
+label: 'NDA Authority Designation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

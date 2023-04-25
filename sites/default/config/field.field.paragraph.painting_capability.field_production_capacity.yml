@@ -1,0 +1,19 @@
+uuid: d61392dd-61f2-42a4-8ad1-c64c73f73fee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_capacity
+    - paragraphs.paragraphs_type.painting_capability
+id: paragraph.painting_capability.field_production_capacity
+field_name: field_production_capacity
+entity_type: paragraph
+bundle: painting_capability
+label: 'Production Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

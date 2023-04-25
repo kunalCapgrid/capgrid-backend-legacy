@@ -1,0 +1,6 @@
+capgrid_tweaks.capgrid_config_form:
+  title: 'Capgrid Config Form'
+  route_name: capgrid_tweaks.capgrid_config_form
+  description: 'Capgrid Configuration Form'
+  parent: system.admin_config_services
+  weight: 99

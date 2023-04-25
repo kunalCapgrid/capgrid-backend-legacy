@@ -1,0 +1,9 @@
+uuid: 52319375-a66a-43e6-819c-98de67744c22
+langcode: en
+status: true
+dependencies: {  }
+id: material_weight
+label: 'Material Weight'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

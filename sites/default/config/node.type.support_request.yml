@@ -1,0 +1,18 @@
+uuid: 88c41da7-2ff1-4bde-bfe9-268bd1d1da9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Support Request'
+type: support_request
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: 4f31fc66-b5bd-4751-b6f9-3c3ab96d24d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_export_auto_parts
+    - node.type.supplier_details
+  module:
+    - options
+id: node.supplier_details.field_export_auto_parts
+field_name: field_export_auto_parts
+entity_type: node
+bundle: supplier_details
+label: 'Export Auto Parts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

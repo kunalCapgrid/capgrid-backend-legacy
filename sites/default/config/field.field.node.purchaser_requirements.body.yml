@@ -1,0 +1,23 @@
+uuid: 6194d4c5-aa74-4b49-8d77-6cd4474c020b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.purchaser_requirements
+  module:
+    - text
+id: node.purchaser_requirements.body
+field_name: body
+entity_type: node
+bundle: purchaser_requirements
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

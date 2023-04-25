@@ -1,0 +1,80 @@
+uuid: 4ec62a6c-dfee-4d68-9d60-37db420896e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.supplier_shortlist.field_invite_rfq
+    - field.field.paragraph.supplier_shortlist.field_nda_document
+    - field.field.paragraph.supplier_shortlist.field_priority
+    - field.field.paragraph.supplier_shortlist.field_request_nda
+    - field.field.paragraph.supplier_shortlist.field_requirement_questionnaire
+    - field.field.paragraph.supplier_shortlist.field_supplier
+    - field.field.paragraph.supplier_shortlist.field_supplier_docs
+    - paragraphs.paragraphs_type.supplier_shortlist
+  module:
+    - media_library
+    - paragraphs
+id: paragraph.supplier_shortlist.default
+targetEntityType: paragraph
+bundle: supplier_shortlist
+mode: default
+content:
+  field_invite_rfq:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_nda_document:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_priority:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_request_nda:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_requirement_questionnaire:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_supplier:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_supplier_docs:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

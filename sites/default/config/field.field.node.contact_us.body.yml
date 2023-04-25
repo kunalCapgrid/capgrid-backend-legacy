@@ -1,0 +1,23 @@
+uuid: 5668adf0-9194-458b-b549-23674ca496da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.contact_us
+  module:
+    - text
+id: node.contact_us.body
+field_name: body
+entity_type: node
+bundle: contact_us
+label: Message
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

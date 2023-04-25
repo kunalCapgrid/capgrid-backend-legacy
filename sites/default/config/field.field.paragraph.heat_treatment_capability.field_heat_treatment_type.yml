@@ -1,0 +1,29 @@
+uuid: 4d2add13-80da-4ec6-8656-729b5779810a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heat_treatment_type
+    - paragraphs.paragraphs_type.heat_treatment_capability
+    - taxonomy.vocabulary.heat_treatment_type
+id: paragraph.heat_treatment_capability.field_heat_treatment_type
+field_name: field_heat_treatment_type
+entity_type: paragraph
+bundle: heat_treatment_capability
+label: 'Heat Treatment Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      heat_treatment_type: heat_treatment_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

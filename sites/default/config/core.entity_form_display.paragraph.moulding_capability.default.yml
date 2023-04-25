@@ -1,0 +1,43 @@
+uuid: 954666b4-ebb0-4082-a3f8-2a8313e71721
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.moulding_capability.field_moulding_type
+    - field.field.paragraph.moulding_capability.field_production_capacity
+    - field.field.paragraph.moulding_capability.field_size
+    - paragraphs.paragraphs_type.moulding_capability
+id: paragraph.moulding_capability.default
+targetEntityType: paragraph
+bundle: moulding_capability
+mode: default
+content:
+  field_moulding_type:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_production_capacity:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_size:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

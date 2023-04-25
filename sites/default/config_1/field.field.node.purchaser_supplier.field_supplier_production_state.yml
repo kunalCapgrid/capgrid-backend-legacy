@@ -1,0 +1,29 @@
+uuid: 3ac1af18-4f7e-466c-8779-fc2a9f2038bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supplier_production_state
+    - node.type.purchaser_supplier
+    - taxonomy.vocabulary.states
+id: node.purchaser_supplier.field_supplier_production_state
+field_name: field_supplier_production_state
+entity_type: node
+bundle: purchaser_supplier
+label: 'Supplier Production State'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      states: states
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

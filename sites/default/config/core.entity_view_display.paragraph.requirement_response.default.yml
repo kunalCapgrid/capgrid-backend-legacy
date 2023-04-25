@@ -1,0 +1,29 @@
+uuid: a8957994-6fc3-415f-b429-20ab58d99bc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.requirement_response.field_requirement_question
+    - field.field.paragraph.requirement_response.field_requirement_response
+    - paragraphs.paragraphs_type.requirement_response
+id: paragraph.requirement_response.default
+targetEntityType: paragraph
+bundle: requirement_response
+mode: default
+content:
+  field_requirement_question:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_requirement_response:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  search_api_excerpt: true

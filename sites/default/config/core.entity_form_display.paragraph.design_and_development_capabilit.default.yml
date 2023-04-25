@@ -1,0 +1,52 @@
+uuid: 4d91140f-0e5a-46a8-948d-40eb26eba9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.design_and_development_capabilit.field_design_and_development_det
+    - field.field.paragraph.design_and_development_capabilit.field_design_and_development_typ
+    - field.field.paragraph.design_and_development_capabilit.field_in_house
+    - field.field.paragraph.design_and_development_capabilit.field_outsourced
+    - paragraphs.paragraphs_type.design_and_development_capabilit
+id: paragraph.design_and_development_capabilit.default
+targetEntityType: paragraph
+bundle: design_and_development_capabilit
+mode: default
+content:
+  field_design_and_development_det:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_design_and_development_typ:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_in_house:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_outsourced:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

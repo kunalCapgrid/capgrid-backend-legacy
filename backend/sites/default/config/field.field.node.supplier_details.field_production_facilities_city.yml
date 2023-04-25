@@ -1,0 +1,19 @@
+uuid: 74a5ecbc-28d3-4c73-b480-2d370af7aab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_production_facilities_city
+    - node.type.supplier_details
+id: node.supplier_details.field_production_facilities_city
+field_name: field_production_facilities_city
+entity_type: node
+bundle: supplier_details
+label: 'Production Facilities City'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 690132d4-f45b-4263-8a93-c799890341ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_priority
+    - paragraphs.paragraphs_type.supplier_shortlist
+  module:
+    - options
+id: paragraph.supplier_shortlist.field_priority
+field_name: field_priority
+entity_type: paragraph
+bundle: supplier_shortlist
+label: Priority
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

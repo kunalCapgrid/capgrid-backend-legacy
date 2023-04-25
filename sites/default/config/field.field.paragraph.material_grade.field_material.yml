@@ -1,0 +1,31 @@
+uuid: 6d213199-9323-486a-a155-202607fe7f91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_material
+    - paragraphs.paragraphs_type.material_grade
+    - taxonomy.vocabulary.material
+  module:
+    - entity_reference_revisions
+id: paragraph.material_grade.field_material
+field_name: field_material
+entity_type: paragraph
+bundle: material_grade
+label: Material
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      material: material
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

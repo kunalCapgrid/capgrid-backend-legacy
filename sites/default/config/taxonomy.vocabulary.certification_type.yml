@@ -1,0 +1,8 @@
+uuid: dd4e7cc4-beb6-44a2-ae23-ff1d34820d9f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Certification Type'
+vid: certification_type
+description: ''
+weight: 0

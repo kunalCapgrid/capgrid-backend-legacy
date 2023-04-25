@@ -1,0 +1,39 @@
+uuid: 9a47ec69-32b8-4ae3-8503-fc850ce42d26
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_us.body
+    - field.field.node.contact_us.field_email
+    - field.field.node.contact_us.field_name
+    - field.field.node.contact_us.field_phone_number
+    - field.field.node.contact_us.field_subject
+    - node.type.contact_us
+  module:
+    - text
+    - user
+id: node.contact_us.teaser
+targetEntityType: node
+bundle: contact_us
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_email: true
+  field_name: true
+  field_phone_number: true
+  field_subject: true
+  search_api_excerpt: true

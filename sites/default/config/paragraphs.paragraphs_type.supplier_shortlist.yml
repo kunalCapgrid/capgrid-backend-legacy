@@ -1,0 +1,9 @@
+uuid: fa10806f-18ce-4221-a90a-a1be2072b1aa
+langcode: en
+status: true
+dependencies: {  }
+id: supplier_shortlist
+label: 'Supplier ShortList'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

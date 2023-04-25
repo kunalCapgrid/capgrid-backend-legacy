@@ -1,0 +1,23 @@
+uuid: e771a9a5-4ebb-4fd7-8c5a-1fc6483c28b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annual_volume
+    - node.type.purchaser_requirements
+id: node.purchaser_requirements.field_annual_volume
+field_name: field_annual_volume
+entity_type: node
+bundle: purchaser_requirements
+label: 'Annual Volume'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

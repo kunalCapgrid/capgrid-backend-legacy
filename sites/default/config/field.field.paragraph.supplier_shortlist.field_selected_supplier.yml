@@ -1,0 +1,23 @@
+uuid: f37da935-7a6a-4df9-aa44-93af7ac84083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_selected_supplier
+    - paragraphs.paragraphs_type.supplier_shortlist
+id: paragraph.supplier_shortlist.field_selected_supplier
+field_name: field_selected_supplier
+entity_type: paragraph
+bundle: supplier_shortlist
+label: 'Selected Supplier'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

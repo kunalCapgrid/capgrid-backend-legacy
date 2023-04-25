@@ -1,0 +1,23 @@
+uuid: 5bcc10d8-9e8f-4227-8237-695907308dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quantity_required
+    - node.type.post_demand
+id: node.post_demand.field_quantity_required
+field_name: field_quantity_required
+entity_type: node
+bundle: post_demand
+label: 'Quantity Required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

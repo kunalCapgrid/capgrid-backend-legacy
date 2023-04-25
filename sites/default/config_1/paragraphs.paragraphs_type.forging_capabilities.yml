@@ -1,0 +1,9 @@
+uuid: e2c40528-7234-4215-bcd0-626e3c97f717
+langcode: en
+status: true
+dependencies: {  }
+id: forging_capabilities
+label: 'Forging Capabilities'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+uuid: 9b4d8853-ff2b-419f-b1e0-36944e8fc694
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Should cost'
+type: should_cost
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

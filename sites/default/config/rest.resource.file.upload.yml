@@ -1,0 +1,23 @@
+uuid: 3e853ea8-151e-4d06-a53f-7882abaf4034
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - hal
+    - jwt
+    - serialization
+    - user
+id: file.upload
+plugin_id: 'file:upload'
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - hal_json
+    - json
+    - xml
+  authentication:
+    - jwt_auth
+    - cookie

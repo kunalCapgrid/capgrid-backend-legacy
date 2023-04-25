@@ -1,0 +1,14 @@
+uuid: 0aae3668-756e-4adf-b69c-d9c9d84c3d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.purchaser
+  module:
+    - user
+id: user_add_role_action.purchaser
+label: 'Add the Purchaser role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: purchaser

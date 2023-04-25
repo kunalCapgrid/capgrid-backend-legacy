@@ -1,0 +1,23 @@
+uuid: 284f3d2b-b6c7-4c06-af8d-dafe7ffa34c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_support_status
+    - node.type.support_request
+  module:
+    - options
+id: node.support_request.field_support_status
+field_name: field_support_status
+entity_type: node
+bundle: support_request
+label: 'Support Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: open
+default_value_callback: ''
+settings: {  }
+field_type: list_string

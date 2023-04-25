@@ -1,0 +1,9 @@
+uuid: f5ea6e22-c6c3-4928-a2ba-794960f42d39
+langcode: en
+status: true
+dependencies: {  }
+id: specific_sub_segment
+label: 'Specific Sub Segment'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

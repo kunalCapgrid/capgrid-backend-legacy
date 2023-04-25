@@ -1,0 +1,19 @@
+uuid: 60622845-7480-4570-9aac-cf0332742095
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.contact_us
+id: node.contact_us.field_email
+field_name: field_email
+entity_type: node
+bundle: contact_us
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

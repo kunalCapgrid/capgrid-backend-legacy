@@ -1,0 +1,20 @@
+uuid: b1e5a1a9-0c15-47a8-8cdf-e1db955898fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_batch_size
+field_name: field_batch_size
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

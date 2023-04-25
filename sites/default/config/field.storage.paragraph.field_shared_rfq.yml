@@ -1,0 +1,18 @@
+uuid: 72f07280-7743-4672-b3f3-03cb2bff712c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_shared_rfq
+field_name: field_shared_rfq
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

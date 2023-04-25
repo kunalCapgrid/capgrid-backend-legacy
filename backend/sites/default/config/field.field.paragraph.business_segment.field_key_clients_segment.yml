@@ -1,0 +1,19 @@
+uuid: 8437c57c-b68f-4a68-bc7d-6c9219cd0246
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_key_clients_segment
+    - paragraphs.paragraphs_type.business_segment
+id: paragraph.business_segment.field_key_clients_segment
+field_name: field_key_clients_segment
+entity_type: paragraph
+bundle: business_segment
+label: 'Key Clients'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

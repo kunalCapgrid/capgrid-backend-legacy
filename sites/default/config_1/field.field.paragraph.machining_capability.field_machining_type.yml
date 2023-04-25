@@ -1,0 +1,29 @@
+uuid: 15a00c51-bfce-4ebe-9ba2-65bad303f6a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_machining_type
+    - paragraphs.paragraphs_type.machining_capability
+    - taxonomy.vocabulary.machining_type
+id: paragraph.machining_capability.field_machining_type
+field_name: field_machining_type
+entity_type: paragraph
+bundle: machining_capability
+label: 'Machining Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      machining_type: machining_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

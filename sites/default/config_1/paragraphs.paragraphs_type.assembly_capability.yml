@@ -1,0 +1,9 @@
+uuid: 5d52a58b-67c0-42dd-b438-1be68f35b06a
+langcode: en
+status: true
+dependencies: {  }
+id: assembly_capability
+label: 'Assembly Capability'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

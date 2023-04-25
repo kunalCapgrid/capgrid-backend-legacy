@@ -1,0 +1,21 @@
+uuid: 6f887fd4-bcab-4ac6-bb8e-8f206888f642
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demand_type
+    - node.type.post_demand
+  module:
+    - options
+id: node.post_demand.field_demand_type
+field_name: field_demand_type
+entity_type: node
+bundle: post_demand
+label: 'Demand Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,9 @@
+uuid: 7cc2923b-c1c1-4add-8d68-7b0c5d4ecbd7
+langcode: en
+status: true
+dependencies: {  }
+id: testing_facility
+label: 'Testing Facility'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

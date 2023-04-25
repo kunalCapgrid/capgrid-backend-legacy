@@ -1,0 +1,20 @@
+uuid: 34fcc2af-9783-493e-839b-3792a64f4a8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_supplier_production_state
+field_name: field_supplier_production_state
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
